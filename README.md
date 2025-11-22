@@ -25,6 +25,8 @@ pip install --only-binary :all: Flask-SQLAlchemy
 - init python flask project
 `python main.py`
 
+- delite you migrations folder if present and database file (.db or .sglite) if present
+
 - create your flask database
 `flask db init`
 
