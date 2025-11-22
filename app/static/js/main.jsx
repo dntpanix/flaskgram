@@ -5,7 +5,7 @@
 
 /* --- API (inlined) --- */
 const api = (function(){
-  const API_URL = '/api';
+  const API_URL = '';
   async function request(path, opts) {
     const res = await fetch(API_URL + path, opts);
     let body;
@@ -13,7 +13,7 @@ const api = (function(){
     return { ok: res.ok, status: res.status, body };
   }
   function login(data){ return request('/login', { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)}); }
-  function signup(data){ return request('/signup', { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)}); }
+  function signup(data){ return request('/register', { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)}); }
   function getUser(token){ return request('/user/me', { headers:{'Authorization': `Bearer ${token}`} }); }
   function getPosts(token){ return request('/posts', { headers:{'Authorization': `Bearer ${token}`} }); }
   function createPost(token, post){ return request('/posts', { method:'POST', headers:{'Content-Type':'application/json','Authorization': `Bearer ${token}`}, body: JSON.stringify(post)}); }
