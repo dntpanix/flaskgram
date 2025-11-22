@@ -2,13 +2,23 @@ from dotenv import load_dotenv
 from app import create_app, db
 from flask_migrate import Migrate
 from app.models import Follow, PostLike, Role, TokenBlocklist, User, Post, Comment, Message
-# from flask import request
+
 
 load_dotenv()
 
 # using default config
-app = create_app('default')
-migrate = Migrate(app, db)
+_cached_app = None
+
+def create_or_get_app(config_name='default'):
+    global _cached_app
+    if _cached_app is None:
+        _cached_app = create_app(config_name)
+    return _cached_app
+
+app = create_or_get_app('default')
+
+if 'migrate' not in app.extensions:
+    migrate = Migrate(app, db)
 
 
 @app.shell_context_processor
