@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Direct Messages</h2>
+<div class="messages-list">
+    {% for msg in messages %}
+    <div class="message-item" data-message-id="{{ msg.id }}">
+        <strong>{{ msg.username }}</strong>: {{ msg.last_message }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

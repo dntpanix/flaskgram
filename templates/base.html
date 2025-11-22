@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Instagram{% endblock %}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #fafafa; }
+        
+        /* Header */
+        .header { background: white; border-bottom: 1px solid #dbdbdb; padding: 10px 0; position: fixed; width: 100%; top: 0; z-index: 100; }
+        .header-content { max-width: 975px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-family: 'Courier New', monospace; font-size: 24px; font-weight: bold; }
+        .search-bar { background: #efefef; border: 1px solid #dbdbdb; border-radius: 3px; padding: 5px 10px; width: 250px; }
+        .nav-icons { display: flex; gap: 20px; }
+        .nav-icon { font-size: 24px; cursor: pointer; text-decoration: none; color: black; }
+        
+        /* Main Content */
+        .main-content { max-width: 975px; margin: 80px auto 0; padding: 20px; }
+        
+        /* Post Card */
+        .post-card { background: white; border: 1px solid #dbdbdb; border-radius: 3px; margin-bottom: 20px; }
+        .post-header { display: flex; align-items: center; padding: 14px; border-bottom: 1px solid #efefef; }
+        .post-avatar { width: 32px; height: 32px; border-radius: 50%; background: #ccc; margin-right: 10px; }
+        .post-username { font-weight: 600; font-size: 14px; }
+        .post-image { width: 100%; display: block; }
+        .post-actions { padding: 14px; }
+        .action-buttons { display: flex; gap: 15px; margin-bottom: 10px; }
+        .action-btn { background: none; border: none; font-size: 24px; cursor: pointer; }
+        .post-likes { font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+        .post-caption { font-size: 14px; }
+        .post-caption .username { font-weight: 600; margin-right: 5px; }
+        .post-comments { color: #8e8e8e; font-size: 14px; margin-top: 5px; cursor: pointer; }
+        .comment-input { width: 100%; border: none; outline: none; padding: 10px 0; border-top: 1px solid #efefef; }
+        
+        /* Profile */
+        .profile-header { display: flex; gap: 30px; padding: 30px 0; border-bottom: 1px solid #dbdbdb; margin-bottom: 30px; }
+        .profile-avatar { width: 150px; height: 150px; border-radius: 50%; background: #ccc; }
+        .profile-info { flex: 1; }
+        .profile-username { font-size: 28px; font-weight: 300; margin-bottom: 20px; }
+        .profile-stats { display: flex; gap: 40px; margin-bottom: 20px; }
+        .stat { font-size: 16px; }
+        .stat-value { font-weight: 600; }
+        .profile-bio { font-size: 14px; }
+        .follow-btn { background: #0095f6; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-weight: 600; cursor: pointer; }
+        
+        /* Grid */
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .grid-post { aspect-ratio: 1; background: #ccc; cursor: pointer; position: relative; }
+        .grid-post img { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* Login */
+        .login-container { max-width: 350px; margin: 50px auto; }
+        .login-box { background: white; border: 1px solid #dbdbdb; padding: 40px; text-align: center; }
+        .login-logo { font-size: 48px; margin-bottom: 30px; }
+        .login-input { width: 100%; padding: 9px 8px; border: 1px solid #dbdbdb; border-radius: 3px; margin-bottom: 8px; background: #fafafa; }
+        .login-btn { width: 100%; background: #0095f6; color: white; border: none; padding: 8px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    {% block header %}
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Instagram</div>
+            <input type="text" class="search-bar" placeholder="Пошук" id="search-input">
+            <div class="nav-icons">
+                <a href="/" class="nav-icon" id="home-icon">🏠</a>
+                <a href="/direct/inbox/" class="nav-icon" id="direct-icon">✉️</a>
+                <a href="/explore/" class="nav-icon" id="explore-icon">🔍</a>
+                <a href="/profile/testuser" class="nav-icon" id="profile-icon">👤</a>
+            </div>
+        </div>
+    </header>
+    {% endblock %}
+    
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <script>
+        {% block scripts %}{% endblock %}
+    </script>
+</body>
+</html>

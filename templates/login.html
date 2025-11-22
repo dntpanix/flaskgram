@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block header %}{% endblock %}
+{% block content %}
+<div class="login-container">
+    <div class="login-box">
+        <div class="login-logo">Instagram</div>
+        <form id="login-form">
+            <input type="text" name="username" class="login-input" placeholder="Телефон, ім'я користувача або ел. адреса" id="username-input" required>
+            <input type="password" name="password" class="login-input" placeholder="Пароль" id="password-input" required>
+            <button type="submit" class="login-btn" id="login-btn">Увійти</button>
+        </form>
+    </div>
+</div>
+
+<script>
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch('/login', {
+        method: 'POST',
+        body: formData
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = data.redirect;
+        } else {
+            alert(data.error);
+        }
+    });
+});
+</script>
+{% endblock %}

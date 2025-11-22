@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="feed-container">
+    {% for post in posts %}
+    <article class="post-card" data-post-id="{{ post.id }}">
+        <div class="post-header">
+            <div class="post-avatar"></div>
+            <span class="post-username">testuser</span>
+        </div>
+        <img src="{{ post.image_url }}" alt="Post image" class="post-image">
+        <div class="post-actions">
+            <div class="action-buttons">
+                <button class="action-btn like-btn" data-post-id="{{ post.id }}">❤️</button>
+                <button class="action-btn comment-btn">💬</button>
+                <button class="action-btn share-btn">📤</button>
+            </div>
+            <div class="post-likes" data-likes="{{ post.likes }}">
+                <span class="likes-count">{{ post.likes }}</span> вподобань
+            </div>
+            <div class="post-caption">
+                <span class="username">testuser</span>
+                {{ post.caption }}
+            </div>
+            <div class="post-comments">
+                Переглянути всі коментарі ({{ post.comments_count }})
+            </div>
+            <input type="text" class="comment-input" placeholder="Додати коментар..." data-post-id="{{ post.id }}">
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
+<script>
+document.querySelectorAll('.like-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const postId = this.dataset.postId;
+        fetch(`/api/posts/${postId}/like`, { method: 'POST' })
+            .then(r => r.json())
+            .then(data => {
+                if (data.success) {
+                    const likesEl = document.querySelector(`[data-post-id="${postId}"] .likes-count`);
+                    likesEl.textContent = data.likes;
+                }
+            });
+    });
+});
+
+document.querySelectorAll('.comment-input').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim()) {
+            const postId = this.dataset.postId;
+            fetch(`/api/posts/${postId}/comment`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ comment: this.value })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.success) {
+                    this.value = '';
+                    alert('Коментар додано!');
+                }
+            });
+        }
+    });
+});
+</script>
+{% endblock %}
