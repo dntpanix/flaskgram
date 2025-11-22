@@ -1,7 +1,7 @@
 # flaskgram
 Python Flask Instagramm emulator
-
-Backend based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
+Fronend based on https://github.com/itsDrac/igclone/
+Backend based on https://github.com/YashMarmat/Instagram-clone-with-FLASK/
 
 ## Installation
 after downloading/cloning the repository code, follow below steps:
