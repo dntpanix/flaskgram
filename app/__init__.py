@@ -1,6 +1,6 @@
 
 from flask import Flask
-from flask import send_from_directory
+from flask import render_template
 
 from flask_sqlalchemy import SQLAlchemy
 from config import config
@@ -40,7 +40,7 @@ def create_app(config_name):
     app.register_blueprint(likesRouteBlueprint)
 
     @app.route('/')
-    def home():
-        return send_from_directory('../static', 'index.html')
+    def index():
+        return render_template('index.html')
 
     return app
