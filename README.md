@@ -41,17 +41,11 @@ pip install --only-binary :all: Flask-SQLAlchemy
 
 `flask shell`
 
-- running following commands in shell (to avoid roles related issues, by default application will provide you user role permissions), so with below command we are setting up 3 types of roles: User, Moderator and Administrator
+- running following commands in shell
 
-`Role.insert_roles()`
+    `python scripts/setup_roles.py`
 
-- confirm roles
-
-`Role.query.all()`
-
-- exit shell
-
-`exit()`
+    (to avoid roles related issues, by default application will provide you user role permissions), so with below command we are setting up 3 types of roles: User, Moderator and Administrator
 
 - As your application is entirely new so there is no data in it so go ahead and signup and login to create your new account (i highly recommend to import the json file present in "project_files" directory to ease your work)
 
