@@ -73,24 +73,38 @@ def create_app(config_name):
     def login():
         """Сторінка логіну"""
         if request.method == 'POST':
-            username = request.form.get('username')
-            password = request.form.get('password')
-            
-            # Тут можна додати реальну авторизацію через Instagram API
-            # Для тестування просто зберігаємо сесію
-            if username and password:
-                session['logged_in'] = True
-                session['username'] = username
-                return jsonify({'success': True, 'redirect': '/'})
-            
-            # перевірка користувача в базі
+            if not request.is_json:
+                return jsonify({
+                    'success': False,
+                    'error': "Unsupported Media Type. Content-Type must be 'application/json'"
+                }), 415
+
+            data = request.get_json(silent=True)
+            if not data:
+                return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
+
+            username = data.get('username', '').strip()
+            password = data.get('password', '')
+
+            if not username or not password:
+                return jsonify({'success': False, 'error': 'Missing username or password'}), 400
+
+            # --- Якщо у вас CSRF захист (Flask-WTF) і ви чекаєте токен в заголовку: ---
+            # try:
+            #     csrf_token = request.headers.get('X-CSRFToken') or request.headers.get('X-CSRF-Token')
+            #     if csrf_token:
+            #         validate_csrf(csrf_token)
+            # except CSRFError as e:
+            #     return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 400
+
+            # --- Аутентифікація ---
             user = User.query.filter_by(username=username).first()
             if user and user.check_password(password):
-                login_user(user)  # flask-login
-                # опціонально: створюємо JWT для API (якщо потрібен)
-                access_token = create_access_token(identity=user.id)
-                return jsonify({'success': True, 'redirect': '/', 'access_token': access_token})
-            return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
+                login_user(user)  # створює flask-login сесію
+                # можеш повертати токен для API, якщо потрібно
+                return jsonify({'success': True, 'redirect': '/'})
+            else:
+                return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
         
         return render_template('login.html')
 

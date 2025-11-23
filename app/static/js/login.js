@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show/Hide password
     showPasswordBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        const btnText = this.querySelector('div');
+        // знайдемо будь-який текстовий вузол всередині кнопки
+        const btnText = this.querySelector('div') || this;
         
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
@@ -24,45 +25,71 @@ document.addEventListener('DOMContentLoaded', function() {
         showPasswordBtn.style.display = this.value.length > 0 ? 'block' : 'none';
     });
     
-    // Form submission
-    form.addEventListener('submit', function(e) {
+    // Helper: enable/disable button styles
+    function setSubmitting(isSubmitting) {
+        loginBtn.disabled = isSubmitting;
+        loginBtn.style.opacity = isSubmitting ? '0.5' : '1';
+    }
+
+    // Form submission (відправляємо JSON)
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        const username = usernameInput.value;
+        const username = usernameInput.value.trim();
         const password = passwordInput.value;
         
         if (!username || !password) {
+            alert('Введіть ім\'я користувача та пароль.');
             return;
         }
         
-        // Disable button during submission
-        loginBtn.disabled = true;
-        loginBtn.style.opacity = '0.5';
-        
-        const formData = new FormData();
-        formData.append('username', username);
-        formData.append('password', password);
-        
-        fetch('/login', {
-            method: 'POST',
-            body: formData
-        })
-        .then(r => r.json())
-        .then(data => {
+        setSubmitting(true);
+
+        const payload = {
+            username: username,
+            password: password
+        };
+
+        try {
+            const resp = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8',
+                    'Accept': 'application/json'
+                    // Якщо є CSRF токен у meta-тегу:
+                    // 'X-CSRFToken': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                },
+                body: JSON.stringify(payload),
+                credentials: 'same-origin'
+            });
+
+            // Перевіряємо HTTP-статус
+            if (!resp.ok) {
+                // якщо сервер повернув JSON з помилкою — виведемо її
+                let errText = `HTTP ${resp.status}`;
+                try {
+                    const errJson = await resp.json();
+                    errText = errJson.error || errJson.message || errText;
+                } catch (e) {
+                    // не JSON — лишимо код помилки
+                }
+                throw new Error(errText);
+            }
+
+            const data = await resp.json();
+
             if (data.success) {
-                window.location.href = data.redirect;
+                // якщо сервер повертає redirect або просто /
+                window.location.href = data.redirect || '/';
             } else {
                 alert(data.error || 'Невірне ім\'я користувача або пароль');
-                loginBtn.disabled = false;
-                loginBtn.style.opacity = '1';
+                setSubmitting(false);
             }
-        })
-        .catch(error => {
+        } catch (error) {
             console.error('Login error:', error);
-            alert('Помилка входу. Спробуйте ще раз.');
-            loginBtn.disabled = false;
-            loginBtn.style.opacity = '1';
-        });
+            alert('Помилка входу. Спробуйте ще раз. ' + (error.message ? `(${error.message})` : ''));
+            setSubmitting(false);
+        }
     });
     
     // Auto-focus on first input
