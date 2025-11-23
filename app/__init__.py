@@ -1,24 +1,16 @@
 import datetime
-from flask import (
-    Flask, 
-    render_template, 
-    request, 
-    jsonify, 
-    session
-)
-
+from flask import Flask, render_template, request, jsonify, session, send_from_directory #redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from config import config
 from flask_cors import CORS
+from flask_jwt_extended import create_access_token, jwt_required, JWTManager, get_jwt_identity
+from flask_login import LoginManager, login_required, login_user, logout_user, current_user
 
-from flask_jwt_extended import create_access_token
-from flask_jwt_extended import get_jwt_identity
-from flask_jwt_extended import jwt_required
-from flask_jwt_extended import JWTManager
+import os
 
 db = SQLAlchemy()
 jwt = JWTManager()
-
+login_manager = LoginManager()
 
 def create_app(config_name):
     app = Flask(__name__)
@@ -26,8 +18,10 @@ def create_app(config_name):
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
     db.init_app(app)
-    # jwt = JWTManager(app)
     jwt.init_app(app)
+    login_manager.init_app(app)
+    # якщо потрібно, можна вказати view у blueprint: 'auth.login'
+    login_manager.login_view = 'login' 
 
     from .postRoute import postRoute as postRouteBlueprint
     app.register_blueprint(postRouteBlueprint) 
@@ -44,10 +38,36 @@ def create_app(config_name):
     from .likesRoute import likesRoute as likesRouteBlueprint
     app.register_blueprint(likesRouteBlueprint)
 
+    # --- user_loader для flask-login ---
+    from .models import User
+    from .models import Post
+
+    def get_posts_for_feed():
+        # якщо в тебе є модель Post — використовуй її
+        try:
+            from .models import Post
+            posts = Post.query.order_by(Post.created_at.desc()).all()
+            return posts
+        except Exception:
+            # fallback: пустий список
+            return []
+    
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.query.get(int(user_id))
+
+    @app.route('/favicon.ico')
+    def favicon():
+        return send_from_directory(os.path.join(app.root_path, 'static'),
+                                'images/favicon.png', mimetype='image/vnd.microsoft.icon')
+
     @app.route('/')
+    @login_required
     def index():
         """Головна сторінка - стрічка новин"""
-        return render_template('feed.html')#, posts=MOCK_DATA['posts']
+        posts = get_posts_for_feed()
+        # передаємо posts у шаблон, щоб UI використовував дані з API/бази
+        return render_template('feed.html', posts=posts)
 
     @app.route('/login', methods=['GET', 'POST'])
     def login():
@@ -63,42 +83,79 @@ def create_app(config_name):
                 session['username'] = username
                 return jsonify({'success': True, 'redirect': '/'})
             
-            return jsonify({'success': False, 'error': 'Invalid credentials'})
+            # перевірка користувача в базі
+            user = User.query.filter_by(username=username).first()
+            if user and user.check_password(password):
+                login_user(user)  # flask-login
+                # опціонально: створюємо JWT для API (якщо потрібен)
+                access_token = create_access_token(identity=user.id)
+                return jsonify({'success': True, 'redirect': '/', 'access_token': access_token})
+            return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
         
         return render_template('login.html')
 
     @app.route('/profile/<username>')
     def profile(username):
         """Сторінка профілю користувача"""
-        # user_data = MOCK_DATA['user'].copy()
-        # user_data['username'] = username
-        return render_template('profile.html')#, user=user_data, posts=MOCK_DATA['posts']
+        # отримуємо дані профілю з БД (приклад)
+        user = User.query.filter_by(username=username).first()
+        if not user:
+            return render_template('profile.html', user=None), 404
 
+        # приклад: отримати пости користувача
+        try:
+            from .models import Post
+            posts = Post.query.filter_by(user_id=user.id).order_by(Post.created_at.desc()).all()
+        except Exception:
+            posts = []
+        return render_template('profile.html', user=user, posts=posts)
+
+    # Приклади API-ендпоінтів (заміни на свої blueprints якщо вони вже є)
     @app.route('/api/posts/<post_id>/like', methods=['POST'])
+    @jwt_required(optional=True)  # або required=True — залежить від бажаного захисту
     def like_post(post_id):
-        """API для лайку поста"""
-        # Симуляція лайку
-        # for post in MOCK_DATA['posts']:
-        #     if post['id'] == post_id:
-        #         post['likes'] += 1
-        #         return jsonify({'success': True, 'likes': post['likes']})
-        return jsonify({'success': False}), 404
+        # Тут логіка лайка: знайти пост, додати лайк, зберегти
+        from .models import Like
+        post = Post.query.filter_by(id=post_id).first()
+        if not post:
+            return jsonify({'success': False}), 404
+        # приклад: додати лайк
+        # current_user може бути доступний через flask-login або через JWT identity
+        identity = None
+        try:
+            identity = get_jwt_identity()
+        except Exception:
+            identity = current_user.get_id() if current_user.is_authenticated else None
+        # ... логіка створення Like ...
+        post.likes_count = (post.likes_count or 0) + 1
+        db.session.commit()
+        return jsonify({'success': True, 'likes': post.likes_count})
 
     @app.route('/api/posts/<post_id>/comment', methods=['POST'])
+    @jwt_required(optional=True)
     def comment_post(post_id):
-        """API для коментування"""
         comment_text = request.json.get('comment')
-        if comment_text:
-            return jsonify({
-                'success': True,
-                'comment': {
-                    'id': f'comment_{datetime.now().timestamp()}',
-                    'text': comment_text,
-                    'username': session.get('username', 'testuser'),
-                    'timestamp': datetime.now().isoformat()
-                }
-            })
-        return jsonify({'success': False}), 400
+        if not comment_text:
+            return jsonify({'success': False}), 400
+        from .models import Post, Comment
+        post = Post.query.filter_by(id=post_id).first()
+        if not post:
+            return jsonify({'success': False}), 404
+        user_identity = get_jwt_identity() or (current_user.get_id() if current_user.is_authenticated else None)
+        username_for_comment = 'anonymous'
+        if user_identity:
+            u = User.query.get(user_identity)
+            if u:
+                username_for_comment = u.username
+        comment = Comment(post_id=post.id, text=comment_text, username=username_for_comment, timestamp=datetime.datetime.utcnow())
+        db.session.add(comment)
+        db.session.commit()
+        return jsonify({'success': True, 'comment': {
+            'id': comment.id,
+            'text': comment.text,
+            'username': comment.username,
+            'timestamp': comment.timestamp.isoformat()
+        }})
 
     @app.route('/api/user/<username>/follow', methods=['POST'])
     def follow_user(username):
