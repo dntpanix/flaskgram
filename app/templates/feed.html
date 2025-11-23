@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="xdt5ytf">
+    <div class="x1n2onr6">
+        {% for post in posts %}
+        <!-- Post Article -->
+        <article class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p" data-post-id="{{ post.id }}" role="presentation">
+            <!-- Post Header -->
+            <header class="x1iyjqo2 xh8yej3">
+                <div class="_aarf">
+                    <div class="_aadp">
+                        <a href="/profile/testuser" role="link" tabindex="0">
+                            <img src="https://via.placeholder.com/32" alt="testuser's profile picture" class="_aadq">
+                        </a>
+                    </div>
+                    <div class="_ap3a">
+                        <div class="x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj" dir="auto">
+                            <a class="_aacl _aaco _aacw _aad6 _aade" href="/profile/testuser" role="link" tabindex="0">testuser</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="x1rg5ohu">
+                    <button class="x1i10hfl" type="button" aria-label="Більше опцій">
+                        <svg aria-label="Більше опцій" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                            <circle cx="12" cy="12" r="1.5"></circle>
+                            <circle cx="6" cy="12" r="1.5"></circle>
+                            <circle cx="18" cy="12" r="1.5"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            
+            <!-- Post Image -->
+            <div class="_aagv">
+                <div class="_aagw">
+                    <img alt="Фото опубліковано testuser" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" src="{{ post.image_url }}" style="object-fit: cover;">
+                </div>
+            </div>
+            
+            <!-- Post Actions & Info -->
+            <div class="x1n2onr6 xh8yej3 x1ja2u2z">
+                <!-- Action Buttons -->
+                <section class="x6s0dn4 x78zum5 xdt5ytf x5yr21d">
+                    <span class="x1rg5ohu xp7jhwk">
+                        <button class="x1i10hfl xjbqb8w like-btn" type="button" data-post-id="{{ post.id }}" aria-label="Вподобати">
+                            <div class="_aamw">
+                                <svg aria-label="Вподобати" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                    <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </span>
+                    
+                    <span class="x1rg5ohu xp7jhwk">
+                        <button class="x1i10hfl xjbqb8w comment-btn" type="button" aria-label="Коментувати">
+                            <div class="_aamw">
+                                <svg aria-label="Коментувати" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                    <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </span>
+                    
+                    <span class="x1rg5ohu xp7jhwk">
+                        <button class="x1i10hfl xjbqb8w share-btn" type="button" aria-label="Поділитися публікацією">
+                            <div class="_aamw">
+                                <svg aria-label="Поділитися публікацією" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                    <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                    <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                                </svg>
+                            </div>
+                        </button>
+                    </span>
+                    
+                    <div class="x1n2onr6 x1ja2u2z x78zum5">
+                        <span class="x1rg5ohu xp7jhwk">
+                            <button class="x1i10hfl xjbqb8w bookmark-btn" type="button" aria-label="Зберегти">
+                                <div class="_aamw">
+                                    <svg aria-label="Зберегти" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                        <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                                    </svg>
+                                </div>
+                            </button>
+                        </span>
+                    </div>
+                </section>
+                
+                <!-- Likes Count -->
+                <section class="x1qjc9v5">
+                    <div class="x1n2onr6">
+                        <a class="_aacl _aaco _aacu _aacx _aad7 _aade" href="#" role="button" tabindex="0">
+                            <span class="likes-count" data-likes="{{ post.likes }}">{{ post.likes }}</span> вподобань
+                        </a>
+                    </div>
+                </section>
+                
+                <!-- Caption -->
+                <div class="_a9zs">
+                    <h1 class="_aacl _aaco _aacu _aacx _aad7 _aade" style="font-size: 14px; font-weight: 400; line-height: 18px;">
+                        <span class="_aacl _aaco _aacw _aad6 _aade" style="font-weight: 600;">testuser</span>
+                        <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto">{{ post.caption }}</span>
+                    </h1>
+                </div>
+                
+                <!-- View Comments -->
+                {% if post.comments_count > 0 %}
+                <button class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft view-comments" type="button">
+                    <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto">Переглянути всі коментарі ({{ post.comments_count }})</span>
+                </button>
+                {% endif %}
+                
+                <!-- Timestamp -->
+                <div class="_aaqe">
+                    <time class="_aaqg notranslate" datetime="{{ post.timestamp }}" title="15 січня 2024 р. о 12:00">5 годин тому</time>
+                </div>
+            </div>
+            
+            <!-- Comment Input -->
+            <section class="x1n2onr6 xh8yej3 x1ja2u2z x1c4vz4f">
+                <form class="x1n2onr6 xh8yej3 x1ja2u2z" method="POST">
+                    <div class="x6s0dn4 x78zum5 x1q0g3np xdt5ytf x1n2onr6 xh8yej3" style="flex-grow: 1;">
+                        <textarea class="x1i10hfl xjqpnuy comment-input" aria-label="Додати коментар..." placeholder="Додати коментар..." autocomplete="off" autocorrect="off" data-post-id="{{ post.id }}" style="height: 18px; max-height: 80px; overflow: hidden !important; resize: none;"></textarea>
+                    </div>
+                    <button class="x1ypdohk x972fbf xcfux6l x1qhh985 xm0m39n post-comment-btn" type="button" disabled>
+                        <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
+                            <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto" style="line-height: 18px;">Опублікувати</span>
+                        </div>
+                    </button>
+                </form>
+            </section>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/feed.js') }}"></script>
+{% endblock %}
