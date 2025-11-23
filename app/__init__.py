@@ -72,41 +72,33 @@ def create_app(config_name):
     @app.route('/login', methods=['GET', 'POST'])
     def login():
         """Сторінка логіну"""
-        if request.method == 'POST':
-            if not request.is_json:
-                return jsonify({
-                    'success': False,
-                    'error': "Unsupported Media Type. Content-Type must be 'application/json'"
-                }), 415
+        if request.method == 'GET':
+            return render_template('login.html')
+        # Перевіряємо що це JSON запит
+        if not request.is_json:
+            return jsonify({
+                'success': False,
+                'error': "Unsupported Media Type. Content-Type must be 'application/json'"
+            }), 415
 
-            data = request.get_json(silent=True)
-            if not data:
-                return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
+        data = request.get_json(silent=True)
+        if not data:
+            return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
 
-            username = data.get('username', '').strip()
-            password = data.get('password', '')
+        email = data.get('username', '').strip()
+        password = data.get('password', '')
 
-            if not username or not password:
-                return jsonify({'success': False, 'error': 'Missing username or password'}), 400
+        if not email or not password:
+            return jsonify({'success': False, 'error': 'Missing username or password'}), 400
 
-            # --- Якщо у вас CSRF захист (Flask-WTF) і ви чекаєте токен в заголовку: ---
-            # try:
-            #     csrf_token = request.headers.get('X-CSRFToken') or request.headers.get('X-CSRF-Token')
-            #     if csrf_token:
-            #         validate_csrf(csrf_token)
-            # except CSRFError as e:
-            #     return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 400
-
-            # --- Аутентифікація ---
-            user = User.query.filter_by(username=username).first()
-            if user and user.check_password(password):
-                login_user(user)  # створює flask-login сесію
-                # можеш повертати токен для API, якщо потрібно
-                return jsonify({'success': True, 'redirect': '/'})
-            else:
-                return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
+        # Аутентифікація
+        user = User.query.filter_by(email=email).first()
+        if user and user.check_password(password):
+            login_user(user)  # створює flask-login сесію
+            return jsonify({'success': True, 'redirect': '/'})
+        else:
+            return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
         
-        return render_template('login.html')
 
     @app.route('/profile/<username>')
     def profile(username):
@@ -206,5 +198,56 @@ def create_app(config_name):
     def explore():
         """Сторінка Explore"""
         return render_template('explore.html')#, posts=MOCK_DATA['posts']
+    
+    @app.route('/accounts/emailsignup/', methods=['GET', 'POST'])
+    def signup():
+        """Сторінка реєстрації"""
+        if request.method == 'GET':
+            return render_template('signup.html')
+        
+        # Перевіряємо що це JSON запит
+        if not request.is_json:
+            return jsonify({
+                'success': False,
+                'error': "Unsupported Media Type. Content-Type must be 'application/json'"
+            }), 415
+
+        data = request.get_json(silent=True)
+        if not data:
+            return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
+
+        email = data.get('email', '').strip().lower()
+        username = data.get('username', '').strip()
+        password = data.get('password', '')
+        password_confirm = data.get('password_confirm', '')
+
+        # ✅ Валідація
+        if not email or not username or not password:
+            return jsonify({'success': False, 'error': 'Заповніть всі поля'}), 400
+
+        if len(password) < 6:
+            return jsonify({'success': False, 'error': 'Пароль має бути мінімум 6 символів'}), 400
+
+        if password != password_confirm:
+            return jsonify({'success': False, 'error': 'Паролі не збігаються'}), 400
+
+        # ✅ Перевіряємо чи існує користувач
+        existing_email = User.query.filter_by(email=email).first()
+        if existing_email:
+            return jsonify({'success': False, 'error': 'Цей email вже зареєстрований'}), 409
+
+        existing_username = User.query.filter_by(username=username).first()
+        if existing_username:
+            return jsonify({'success': False, 'error': 'Це ім\'я користувача вже займяте'}), 409
+
+        # ✅ Створюємо новго користувача
+        try:
+            new_user = User(email=email, username=username, password=password)
+            db.session.add(new_user)
+            db.session.commit()
+            return jsonify({'success': True, 'message': 'Реєстрація успішна! Перенаправлення на логін...', 'redirect': '/login'})
+        except Exception as e:
+            db.session.rollback()
+            return jsonify({'success': False, 'error': 'Помилка при реєстрації: ' + str(e)}), 500
 
     return app

@@ -14,8 +14,9 @@ from .. import db
 
 @authRoute.route('/login', methods=['POST'])
 def login():
-    email = request.json.get('email', None)
-    password = request.json.get('password', None)
+    req_json = request.json
+    email = req_json.get('email', req_json.get('username', None))
+    password = req_json.get('password', None)
 
     user = User.query.filter_by(email=email).first()
 
