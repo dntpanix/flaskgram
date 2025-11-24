@@ -55,11 +55,11 @@ def create_app(config_name):
     def load_user(user_id):
         return User.query.get(int(user_id))
 
+
     @app.route('/favicon.ico')
     def favicon():
         return send_from_directory(os.path.join(app.root_path, 'static'),
                                 'images/favicon.png', mimetype='image/vnd.microsoft.icon')
-
 
 
     @app.route('/')
