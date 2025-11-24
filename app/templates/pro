@@ -1,0 +1,617 @@
+<section class="x78zum5 xdt5ytf x1iyjqo2 xg6iff7">
+    <div data-visualcompletion="ignore-dynamic">
+        <main class="x78zum5 xdt5ytf x1iyjqo2 xl56j7k xl8spv7" style="--x-backgroundColor: rgb(var(--ig-primary-background));" role="main">
+            <div class="x1iyjqo2 xdj266r x11t971q xat24cr xvc5jky x1ykew4q x38y82z x1xnnf8n x18d9i69 x106a9eq x19sv2k2 x1wfb79h xb3f9ss x1k4gc0v x1hfk2xs x10rn61k">
+                <div>
+                    <header class="xrvj5dj xl463y0 x1ec4g5p xdj266r xwy3nlu xh8yej3">
+                        <section class="x6s0dn4 x78zum5 xcrlgei x1cq0mwf xdx80a7 x1agbcgv xl56j7k xlo4toe x2wt2w">
+                            <div class="x6s0dn4 x78zum5 xdt5ytf x1iyjqo2 x2lah0s xl56j7k x1n2onr6">
+                                <span aria-describedby="_r_30_" class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j">
+                                    <div>
+                                    <div class="x1i10hfl xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x1q0g3np x87ps6o x1lku1pv x1a2a7pz x6s0dn4 xamitd3 x1lliihq xl56j7k x1n2onr6" role="button" tabindex="0">
+                                        <canvas class="x1upo8f9 xpdipgo x87ps6o" height="165" style="left: -7.5px; position: absolute; top: -7.5px; height: 165px; width: 165px;" width="165"></canvas>
+                                        <span class="xnz67gz x1c9tyrk xeusxvb x1pahc9y x1ertn4p x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 xzfakq xhihtb0 x1j8hi7x x172hklt xrw4ojt xg6frx5 xw872ko xhgbb2x xynf4tj xdjs2zz x1r9ni5o xvsnedh xoiy6we x16ouz9t x1qj619r xsrjr5h x1xrz1ek x1s928wv x1unh1gc x1iygr5g x2q1x1w x1j6awrg x1m1drc7 x1ypdohk" role="link" style="height: 150px; width: 150px;" tabindex="0">
+                                            <img alt="{{ user.username }} profile picture" class="xpdipgo x972fbf x10w94by x1qhh985 x14e42zd xk390pu x5yr21d xdj266r x14z9mp xat24cr x1lziwak xl1xv1r xexx8yu xyri2b x18d9i69 x1c1uobl x11njtxf xh8yej3" crossorigin="anonymous" draggable="false" 
+                                            src="{{ user.profile_pic }}">
+                                        </span>
+                                    </div>
+                </div>
+                </span>
+            </div>
+            </section>
+            <section class="x1xdureb x1agbcgv xieb3on x1lhsz42 xr1yuqi x6ikm8r x10wlt62 x1jfgfrl">
+                <div>
+                    <div class="x6s0dn4 x78zum5 x1q0g3np xs83m0k xeuugli x1n2onr6">
+                        <div class="html-div xdj266r xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x3aesyq x1uhb9sk x6ikm8r x10wlt62 x1c4vz4f xs83m0k xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                            <div class="x78zum5 x193iq5w x6ikm8r x10wlt62"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x6s0dn4 x78zum5 x1q0g3np xs83m0k xeuugli x1n2onr6 _a6hd"
+                                href="#" role="link" tabindex="0"><h2 class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 25px; --x-lineHeight: 25px;" dir="auto" tabindex="-1"><span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">ivanna.mal</span></h2></a></div>
+                        </div>
+                        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w xfex06f x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                    <button class=" _aswp _aswr _aswu _asw_ _asx2" type="button">
+                                        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x9f619 x16ye13r xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x11lfxj5 x135b78x x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh xl56j7k"
+                                        style="--x-height: 100%;">
+                                            <div class="_ap3a _aaco _aacw _aad6 _aade" dir="auto">Follow</div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x6ikm8r x10wlt62 x1iyjqo2 x2lwn1j xeuugli xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                    <div class="x1i10hfl xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x972fbf x10w94by x1qhh985 x14e42zd xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu x18d9i69 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1obq294 x5a5i1n xde0f50 x15x8krk x1ejq31n x18oe1m7 x1sy0etr xstzfhl x9f619 x1ypdohk x78zum5 x1f6kntn xwhw2v2 x10w6t97 xl56j7k x17ydfre xf7dkkf xv54qhq x1n2onr6 x2b8uid xlyipyv x87ps6o x14atkfc x5c86q x18br7mf x1i0vuye x1aavi5t x1h6iz8e xixcex4 xk4oym4 xl3ioum"
+                                    role="button" tabindex="0">Message</div>
+                                </div>
+                                <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                    <div class="x1i10hfl x9f619 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x6s0dn4 x1ejq31n x18oe1m7 x1sy0etr xstzfhl x1ypdohk xl56j7k x1y1aw1k xf159sx xwib8y2 xmzvs34 xcdnw81 x1epzrsm x1jplu5e x14snt5h x1gjpkn9 x1obq294 x5a5i1n xde0f50 x15x8krk x972fbf x10w94by x1qhh985 x14e42zd xt0psk2 xsz8vos"
+                                    role="button" tabindex="0">
+                                        <div class="x6s0dn4 x78zum5 xdt5ytf xl56j7k">
+                                            <svg aria-label="Similar accounts" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16" role="img" viewBox="0 0 24 24" width="16">
+                                                <title>Similar accounts</title>
+                                                <path d="M19.006 8.252a3.5 3.5 0 1 1-3.499-3.5 3.5 3.5 0 0 1 3.5 3.5Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></path>
+                                                <path d="M22 19.5v-.447a4.05 4.05 0 0 0-4.05-4.049h-4.906a4.05 4.05 0 0 0-4.049 4.049v.447" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="5.001" x2="5.001" y1="7.998" y2="14.003"></line>
+                                                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="8.004" x2="2.003" y1="11" y2="11"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x1q0g3np x2lah0s">
+                            <div class="x1i10hfl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x6s0dn4 xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x1ypdohk x78zum5 xl56j7k x1y1aw1k xf159sx xwib8y2 xmzvs34 xcdnw81 x1epzrsm x1jplu5e x14snt5h"
+                            role="button" tabindex="0">
+                                <div class="x6s0dn4 x78zum5 xdt5ytf xl56j7k">
+                                    <svg aria-label="Options" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="32" role="img" viewBox="0 0 24 24" width="32">
+                                        <title>Options</title>
+                                        <circle cx="12" cy="12" r="1.5"></circle>
+                                        <circle cx="6" cy="12" r="1.5"></circle>
+                                        <circle cx="18" cy="12" r="1.5"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="xc3tme8 x1xdureb x18wylqe x13vxnyz xvxrpd7">
+                <ul class="x78zum5 x1q0g3np xieb3on">
+                    <li class="xl565be x11gldyt x1pwwqoy x1j53mea">
+                        <div><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x1roi4f4 x2b8uid x10wh9bi xpm28yp x8viiok x1o7cslx"
+                            style="--x---base-line-clamp-line-height: 20px; --x-lineHeight: 20px;" dir="auto"><span class="x5n08af x1s688f"><span class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs">205</span></span>
+                            posts</span>
+                        </div>
+                    </li>
+                    <li class="xl565be x11gldyt x1pwwqoy x1j53mea">
+                        <div><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x5n08af x9n4tj2 _a6hd"
+                            href="/ivanna.mal/followers/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x1roi4f4 x2b8uid x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 20px; --x-lineHeight: 20px;" dir="auto"><span class="x5n08af x1s688f" title="14,814"><span class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs">14.8K</span></span> followers</span></a></div>
+                    </li>
+                    <li class="xl565be x11gldyt x1pwwqoy x1j53mea">
+                        <div><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x5n08af x9n4tj2 _a6hd"
+                            href="/ivanna.mal/following/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x1roi4f4 x2b8uid x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 20px; --x-lineHeight: 20px;" dir="auto"><span class="x5n08af x1s688f"><span class="html-span xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1hl2dhg x16tdsg8 x1vvkbs">626</span></span> following</span></a></div>
+                    </li>
+                </ul>
+            </section>
+            <section class="xc3tme8 x1xdureb x18wylqe x1vnunu7 x1iom2gc x172qv1o x1jfgfrl x69nqbv x2wt2w x6ikm8r x10wlt62">
+                <div class="x7a106z x972fbf x10w94by x1qhh985 x14e42zd x9f619 x78zum5 xdt5ytf x2lah0s xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x11njtxf x1fkh5qu x1ddbhtg x1dlrdel">
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1oa3qoh x6s0dn4 x1amjocr x78zum5 xl56j7k"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 18px; --x-lineHeight: 18px;"
+                        dir="auto">Іванна Малій</span></div>
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x17zd0t2 x3pnbk8 x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+                        <div class="x1dc814f x1yrsyyn x10b6aqq">
+                            <a class="x1i10hfl xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu x18d9i69 x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz x6s0dn4 x1hmx34t x1ekkm8c x1143rjc xum4auv xj21bgg x78zum5 xd7y6wv x1pixwil x1bjonze"
+                            href="https://www.threads.com/@ivanna.mal?xmt=AQF03AUMhng_j54115XT8MA6ZfgjmSGu0yWBBJ2ZpPgQOJU" role="link" tabindex="0" target="_blank">
+                                <div class="xlup9mm x1im30kd x1kky2od">
+                                    <svg aria-label="Threads" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="16" role="img" viewBox="0 0 192 192" width="16">
+                                        <title>Threads</title>
+                                        <path class="xcslo1z" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path>
+                                    </svg>
+                                </div><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+                                style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto"><span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">ivanna.mal</span></span>
+                                <div class="x1ey2m1c xtijo5x x1o0tod xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1fmog5m xu25z0z x140muxe xo1y3bh"
+                                role="none" data-visualcompletion="ignore" style="inset: 0px;"></div>
+                            </a>
+                        </div>
+                    </div><span class="_ap3a _aaco _aacu _aacx _aad7 _aade" dir="auto"><div aria-disabled="false" role="button" style="display: inline; cursor: pointer;" tabindex="0"><span class="_ap3a _aaco _aacu _aacx _aad7 _aade" dir="auto">мама в <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz notranslate _a6hd" href="/lyuk.ua/" role="link" tabindex="0">@lyuk.ua</a> <br>для співпраць: tg: prprojj<br>Петиція👇</span></div>
+                </span>
+                <h1 class="_ap3a _aaco _aacu _aacy _aad6 _aade" dir="auto"> </h1>
+                <button class=" _aswp _aswq _asws _aswu _asx0 _asx2" type="button">
+                    <div class="x3nfvp2 x193iq5w"><span class="xcknrev xyqdw3p"><svg aria-label="Link icon" class="x1lliihq x1n2onr6 x7l2uk3" fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Link icon</title><path d="m9.726 5.123 1.228-1.228a6.47 6.47 0 0 1 9.15 9.152l-1.227 1.227m-4.603 4.603-1.228 1.228a6.47 6.47 0 0 1-9.15-9.152l1.227-1.227" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="8.471" x2="15.529" y1="15.529" y2="8.471"></line></svg></span>
+                        <div
+                        class="_ap3a _aaco _aacw _aacz _aada _aade" dir="auto">petition.president.gov.ua/petition/254664 and 1 more</div>
+    </div>
+    </button>
+    </div>
+    </section>
+    <section class="xc3tme8 x1xdureb x1rlzn12 xysbk4d xw7yly9 x1jfgfrl"></section>
+    <section class="xc3tme8 xcrlgei x1682tcd xtyw845">
+        <div role="menu">
+            <div class="x129qt2x x1mzvp2d xx7atzb x69nqbv">
+                <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf xln7xf2 xk390pu x5yr21d x1n2onr6 x11njtxf xh8yej3">
+                    <div class="x1qjc9v5 x78zum5 x1q0g3np x5yr21d xw2csxc x10wlt62 x1n2onr6 x1rohswg xfk6m8" role="presentation">
+                        <div class="x1qjc9v5 x9f619 x78zum5 x1q0g3np xln7xf2 xk390pu x5yr21d x1n2onr6 x11njtxf">
+                            <ul class="_acay">
+                                <li style="transform: translateX(0px); width: 24px;"></li>
+                                <li style="transform: translateX(264px); width: 24px;"></li>
+                                <li class="_acaz" style="transform: translateX(24px);" tabindex="-1">
+                                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x5lhr3w xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k"
+                                    style="--x-width: 125px;">
+                                        <div class="x9f619 xdj266r x172qv1o x14z9mp x1e667m1 xat24cr x1lhsz42 x1lziwak xi3bw9h x889kno xr0wu61 x1q3ajuy xb3f9ss x1a8lsjc x1k4gc0v x1gx403c x1hfk2xs x1m56yxe xxqkl0v">
+                                            <a aria-label="View Співпраця highlight" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                                            href="/stories/highlights/18237015838291652/" role="link" tabindex="0">
+                                                <div class="x1i10hfl xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x6s0dn4 x78zum5 xdt5ytf sf-root-media-container"
+                                                role="button" tabindex="0" style="position: relative;" data-sf-touch="1">
+                                                    <div class="x1upo8f9 xpdipgo xamitd3 x1n2onr6 x87ps6o x1ypdohk" aria-disabled="false" role="button" style="cursor: pointer;" tabindex="0" data-sf-skip="1">
+                                                        <canvas height="92" style="left: -7.5px; position: absolute; top: -7.5px; height: 92px; width: 92px;" width="92"></canvas>
+                                                        <div class="xnz67gz x1c9tyrk xeusxvb x1pahc9y x1ertn4p x1lliihq x6ikm8r x10wlt62 x1n2onr6" style="height: 77px; width: 77px;"><img height="77" width="77" class="xz74otr x15mokao x1ga7v0g x16uus16 xbiv7yw sf-notify-on-remove-441761" alt="ivanna.mal's highlight story picture" referrerpolicy="origin-when-cross-origin" src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-15/545327079_763461729909642_8296858706796553464_n.jpg?stp=dst-jpg_s150x150_tt6&amp;_nc_ht=instagram.fiev6-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_oc=Q6cZ2QGXv9KT_EhyEVbKBI0NAeEKl5AiGGSdbedJhHDRKyf7W8hQXWm49G1f2kWkx__BeT0&amp;_nc_ohc=zWv2qMjIa18Q7kNvwGhL3Z2&amp;_nc_gid=YCxt6jzr0yVIyDnaKBTSXQ&amp;edm=AGXveE0BAAAA&amp;ccb=7-5&amp;oh=00_Afho8pYthlLRMHN1VsVEgTFaEyzDBS66dOU6pwS20Tv-gw&amp;oe=6929CEAC&amp;_nc_sid=522435"></div>
+                                                    </div>
+                                                    <div class="xqy66fx x1wq6e7o xh8yej3 x1ypdohk x2b8uid"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+                                                        style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto"><span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">Співпраця</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="_acaz" style="transform: translateX(156px);" tabindex="-1">
+                                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x5lhr3w xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k"
+                                    style="--x-width: 125px;">
+                                        <div class="x9f619 xdj266r x172qv1o x14z9mp x1e667m1 xat24cr x1lhsz42 x1lziwak xi3bw9h x889kno xr0wu61 x1q3ajuy xb3f9ss x1a8lsjc x1k4gc0v x1gx403c x1hfk2xs x1m56yxe xxqkl0v">
+                                            <a aria-label="View бренд люк highlight" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                                            href="/stories/highlights/18064889422986434/" role="link" tabindex="0">
+                                                <div class="x1i10hfl xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x6s0dn4 x78zum5 xdt5ytf sf-root-media-container"
+                                                role="button" tabindex="0" style="position: relative;" data-sf-touch="1">
+                                                    <div class="x1upo8f9 xpdipgo xamitd3 x1n2onr6 x87ps6o x1ypdohk" aria-disabled="false" role="button" style="cursor: pointer;" tabindex="0" data-sf-skip="1">
+                                                        <canvas height="92" style="left: -7.5px; position: absolute; top: -7.5px; height: 92px; width: 92px;" width="92"></canvas>
+                                                        <div class="xnz67gz x1c9tyrk xeusxvb x1pahc9y x1ertn4p x1lliihq x6ikm8r x10wlt62 x1n2onr6" style="height: 77px; width: 77px;"><img height="77" width="77" class="xz74otr x15mokao x1ga7v0g x16uus16 xbiv7yw sf-notify-on-remove-441761" alt="ivanna.mal's highlight story picture" referrerpolicy="origin-when-cross-origin" src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-15/574284429_17900664606318621_6424759804869500749_n.jpg?stp=c0.499.1284.1284a_dst-jpg_e15_s150x150_tt6&amp;_nc_ht=instagram.fiev6-1.fna.fbcdn.net&amp;_nc_cat=109&amp;_nc_oc=Q6cZ2QGXv9KT_EhyEVbKBI0NAeEKl5AiGGSdbedJhHDRKyf7W8hQXWm49G1f2kWkx__BeT0&amp;_nc_ohc=GJTuR-j1iJIQ7kNvwE8q_eT&amp;_nc_gid=YCxt6jzr0yVIyDnaKBTSXQ&amp;edm=AGXveE0BAAAA&amp;ccb=7-5&amp;oh=00_AfjzJtWmcSpRCxuBw3RM-zab_EJrCb_ZY3I_ZahZ6-_jFw&amp;oe=6929A514&amp;_nc_sid=522435"></div>
+                                                    </div>
+                                                    <div class="xqy66fx x1wq6e7o xh8yej3 x1ypdohk x2b8uid"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+                                                        style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto"><span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">бренд люк</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="xc3tme8 xcrlgei x1tmp44o xwqlbqq x7y0ge5 xhayw2b"></section>
+    </header>
+    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl">
+        <div role="tablist" class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x78zum5 x124el2t x1q0q8m5 x1co6499 x17zd0t2 xl56j7k">
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k xl56j7k xg7l0n3">
+                <a aria-selected="true" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 xstzfhl x972fbf x10w94by x14e42zd x9f619 x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x16tdsg8 xggy1nq x1a2a7pz x6s0dn4 x78zum5 x1q0g3np xl56j7k x1hl2dhg x1lku1pv x1c4vz4f xn3w4p2 x106a9eq x1xnnf8n x1q0q8m5 xlxy82 x1iwc013 _a6hd"
+                href="/ivanna.mal/" role="link" tabindex="0">
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 xl56j7k xfex06f">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x14rh7hd" style="--x-color: rgb(var(--ig-primary-icon));">
+                            <title>Posts</title>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M3 3H21V21H3z"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M9.01486 3 9.01486 21"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M14.98514 3 14.98514 21"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M21 9.01486 3 9.01486"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M21 14.98514 3 14.98514"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k xl56j7k xg7l0n3">
+                <a aria-selected="false" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 xstzfhl x972fbf x10w94by x14e42zd x9f619 x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x16tdsg8 xggy1nq x1a2a7pz x6s0dn4 x78zum5 x1q0g3np xl56j7k x1hl2dhg x1lku1pv x1c4vz4f xn3w4p2 x106a9eq x1xnnf8n x16stqrj x1q0q8m5 xlxy82 _a6hd"
+                href="/ivanna.mal/reels/" role="link" tabindex="0">
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 xl56j7k xfex06f">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x14rh7hd" style="--x-color: rgb(var(--ig-secondary-icon));">
+                            <title>Reels</title>
+                            <g stroke="currentColor" stroke-linejoin="round" stroke-width="2px">
+                                <path d="M2.0493 7.002 21.9503 7.002" fill="none"></path>
+                                <path stroke-linecap="round" d="M13.50427 2.001 16.36227 7.002" fill="none"></path>
+                                <path stroke-linecap="round" d="M7.20677 2.1099 10.00177 7.0019" fill="none"></path>
+                                <path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552z"
+                                stroke-linecap="round" fill="none"></path>
+                            </g>
+                            <path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0z" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 x1r8uery x1iyjqo2 xs83m0k xl56j7k xg7l0n3">
+                <a aria-selected="false" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 xstzfhl x972fbf x10w94by x14e42zd x9f619 x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x16tdsg8 xggy1nq x1a2a7pz x6s0dn4 x78zum5 x1q0g3np xl56j7k x1hl2dhg x1lku1pv x1c4vz4f xn3w4p2 x106a9eq x1xnnf8n x16stqrj x1q0q8m5 xlxy82 _a6hd"
+                href="/ivanna.mal/tagged/" role="link" tabindex="0">
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 xl56j7k xfex06f">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x14rh7hd" style="--x-color: rgb(var(--ig-secondary-icon));">
+                            <title>Tagged</title>
+                            <path d="M10.201 3.797 12 1.997l1.799 1.8a1.59 1.59 0 0 0 1.124.465h5.259A1.818 1.818 0 0 1 22 6.08v14.104a1.818 1.818 0 0 1-1.818 1.818H3.818A1.818 1.818 0 0 1 2 20.184V6.08a1.818 1.818 0 0 1 1.818-1.818h5.26a1.59 1.59 0 0 0 1.123-.465z"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px"></path>
+                            <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px">
+                                <path d="M18.598 22.002V21.4a3.949 3.949 0 0 0-3.948-3.949H9.495A3.949 3.949 0 0 0 5.546 21.4v.603" fill="none"></path>
+                                <circle cx="12.07211" cy="11.07515" r="3.55556" fill="none"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div role="tabpanel" class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl"></div>
+    </div>
+    <div class="xg7h5cd x1n2onr6">
+        <div class="x1n2onr6">
+            <div>
+                <div>
+                    <div style="display: flex; flex-direction: column; padding-bottom: 0px; padding-top: 0px; position: relative;">
+                        <div class="_ac7v x1ty9z65 xzboxd6">
+                            <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+                                <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                                href="/ivanna.mal/reel/DGTFDp1NMeJ/" role="link" tabindex="0">
+                                    <div class="_aagu">
+                                        <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Як почуваєте ви себе у своєму районі?" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: contain; height: auto; transform: scale(1) translateX(0%) translateY(-6.34082%);"
+                                            src="https://scontent.cdninstagram.com/v/t51.71878-15/481021094_1028869559086282_8547098930568850352_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=108&amp;ig_cache_key=MzU3MjIyMTE3MDc0MTk4NzIwOQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=aSaK96taxe8Q7kNvwGFbMSS&amp;_nc_oc=Adm3f5q-5bsgHsIlzOnm1W6GPdHQlROAtXwuuqrcyReIse35w7mdUGSKl64FQniYnfI&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfjuLA1mvOlphf8CDoUcdt2eVtzf1jSYdfZP0dIDqb0iFw&amp;oe=6929AD09"></div>
+                                        <div
+                                        class="_aagw"></div>
+                            </div>
+                            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                                    <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                        <svg aria-label="Pinned post icon" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                                            <title>Pinned post icon</title>
+                                            <path d="m22.707 7.583-6.29-6.29a1 1 0 0 0-1.414 0 5.183 5.183 0 0 0-1.543 3.593L8.172 8.79a5.161 5.161 0 0 0-4.768 1.42 1 1 0 0 0 0 1.414l3.779 3.778-5.89 5.89a1 1 0 1 0 1.414 1.414l5.89-5.89 3.778 3.779a1 1 0 0 0 1.414 0 5.174 5.174 0 0 0 1.42-4.769l3.905-5.287a5.183 5.183 0 0 0 3.593-1.543 1 1 0 0 0 0-1.414Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+                            <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                            href="/ivanna.mal/reel/DRWv2UMCMvc/" role="link" tabindex="0">
+                                <div class="_aagu">
+                                    <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="АКТИВІСТИ ПЕРЕКРИЛИ ДОРОГУ😱😱😱" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-15/584521278_18364994758091739_6214176887759673312_n.jpg?stp=dst-jpg_e15_tt6&amp;efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLmltYWdlX3VybGdlbi41MDR4ODk2LnNkci5mODI3ODcuZGVmYXVsdF9jb3Zlcl9mcmFtZS5jMiJ9&amp;_nc_ht=instagram.fiev6-1.fna.fbcdn.net&amp;_nc_cat=103&amp;_nc_oc=Q6cZ2QE-PbAMBrCHmYw3_F5We-2uL1MbS_XzRWZzIn-BNbx85Hg_IurpUq5MGSXp_Me_uSE&amp;_nc_ohc=a8Xk2N4rDf4Q7kNvwHZ_rev&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;edm=AP4sbd4BAAAA&amp;ccb=7-5&amp;ig_cache_key=Mzc3MTQxMjE3ODY4Mzg3NDI2OA%3D%3D.3-ccb7-5&amp;oh=00_AfhPYW1a26Mx8Mfx07uPqsHeULcgI4fOW4Mu6Ho8VOYotQ&amp;oe=6929A732&amp;_nc_sid=7a9f4b"></div>
+                                    <div
+                                    class="_aagw"></div>
+                        </div>
+                        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                            <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                                <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                    <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                                        <title>Clip</title>
+                                        <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+                        <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                        href="/ivanna.mal/reel/DRUmBWYCD95/" role="link" tabindex="0">
+                            <div class="_aagu">
+                                <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Наші пригоди на метро Університет продовжуються
+
+Якщо хочете спробувати покористуватися кріслом колісним, завтра в суботу о 12:00 чекатимемо всіх охочих на метро Університет з кріслом.
+
+‼️Підпишіть петицію в описі профілю‼️" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: contain; height: auto; transform: scale(1) translateX(0%) translateY(-16.5125%);" src="https://scontent.cdninstagram.com/v/t51.71878-15/584345893_9852034521588110_8236650324711432742_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=100&amp;ig_cache_key=Mzc3MDgwNjAwNjUyODM2MDMxMw%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=44okOsZjv4MQ7kNvwHRg2Ps&amp;_nc_oc=AdmgNU6vX6B2NFbHhJJngq1TEGxmssK2kkDYvwLfOFs0DrV9KsyMBXCkmeO_SUwziWc&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_Afg-Gfy1pWly8FkZ82xDKs0zzHfULVze8y1uHib3DWjiMA&amp;oe=6929B1DF"></div>
+                                <div
+                                class="_aagw"></div>
+                    </div>
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                        <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                            <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                                    <title>Clip</title>
+                                    <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="_ac7v x1ty9z65 xzboxd6">
+                <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+                    <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd"
+                    href="/ivanna.mal/reel/DRAFdoeiDGD/" role="link" tabindex="0">
+                        <div class="_aagu">
+                            <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Національна поліція вкотре не може затвердити проєкт наземного переходу на метро Університет, ігноруючи національні вимоги безбарʼєрности 🫠
+
+Ми можемо дотиснути цей проєкт, зібравши підписи на петицію. Посилання на неї в описі" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.71878-15/581155756_1543365736817022_26531684047950344_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=110&amp;ig_cache_key=Mzc2NTAzMzMxNTA0MTAzMDUzMQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=14mexBoOkl8Q7kNvwGbf5WC&amp;_nc_oc=Adl1LrH7Lx-VCZrRBvOMFh9rp8_S5roLlcwBtb7o7HTjkFPQslof5LhxsC3GGksesHU&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfgtU4wbCWxL-T8F9fIV6nyWLMRAVOGaGITqqD_Xo5CdCA&amp;oe=6929B628"></div>
+                            <div
+                            class="_aagw"></div>
+                </div>
+                <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                    <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                        <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                            <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                                <title>Clip</title>
+                                <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+                <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/noire_in/reel/DQ6cRLPDJbt/"
+                role="link" tabindex="0">
+                    <div class="_aagu">
+                        <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Детальніше у дописі та відео @ivanna.mal , а петиція у шапці її профілю. Можливо, саме розголос допоможе «намалювати» перехід на метро Університет." class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous"
+                            style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/581662915_17988511907902589_8747393909946860923_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=107&amp;ig_cache_key=Mzc2MzQ0NDc2NDIxODUyOTUxNzE3OTg4NTExOTA0OTAyNTg5.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=-yNpi7NsR6EQ7kNvwEnLjBg&amp;_nc_oc=AdnqMQMeCOsFbnZJcR63sMVKyFL02A7z8HUG9mcdiKcDzYZ4AO7uvUXxvv7_q8pcapo&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_Afhv8tAZCu8aNsCCrGwUkWUczW5Iy8Dh0iszEAFg0CaI-A&amp;oe=6929ACBE"></div>
+                        <div
+                        class="_aagw"></div>
+            </div>
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                    <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                        <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                            <title>Clip</title>
+                            <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+            <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/noire_in/reel/DQyr1o5jIPN/"
+            role="link" tabindex="0">
+                <div class="_aagu">
+                    <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Детальніше у дописі та відео @ivanna.mal , а петиція у шапці її профілю. Можливо, саме розголос допоможе «намалювати» перехід на метро Університет." class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous"
+                        style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/575125951_17988220301902589_5885173451045394491_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=104&amp;ig_cache_key=Mzc2MTI2MTQ0MDg1NTIxMzAwNTE3OTg4MjIwMjk4OTAyNTg5.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=Q0vT4bG2kz4Q7kNvwFp2mjF&amp;_nc_oc=AdkVtNkjHrTlXizmrT9HgCKeMsJelAPCKlUpR_dzN4qfxMOXbzsDhi3yoSoUytl3RVw&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfgAnkD6lLccoemMiiSbmOifbz-jgrvNZgTONHM63Za9gA&amp;oe=6929B09C"></div>
+                    <div
+                    class="_aagw"></div>
+        </div>
+        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+            <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                    <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                        <title>Clip</title>
+                        <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+    </div>
+    <div class="_ac7v x1ty9z65 xzboxd6">
+        <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+            <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/ucu_auction_of_meetings/p/DQyai2SDETU/"
+            role="link" tabindex="0">
+                <div class="_aagu">
+                    <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Photo shared by Благодійний Аукціон Зустрічей УКУ on November 07, 2025 tagging @ivanna.mal. May be an image of poster, bolo tie, magazine and text that says 'Аукцион Зустричей АукцίонЭустричейуку YKY Мета: Мета:1200000г 1 200 OoO 2000002 ච напίкапидлястудента на Пίкапи для студента YKY УКУ3ББС&lt;&lt;Нахтίгаль» 3 ББС &quot;Нахтёаль»'."
+                        class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/576368244_18326944906213965_7835360429705409596_n.webp?_nc_cat=100&amp;ig_cache_key=Mzc2MTE4NTM4Mjc2NDEzNTYzNg%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNTJ4MTQ0MC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=_TXbcjC4D8YQ7kNvwHIvJtj&amp;_nc_oc=Adn5X2PU9OMqsi1tMUBsW_iUoz7OVFAKI-j_rgdl-UuoJIBmcULVudCcyFjZ4LWPa2c&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfhHl0siErjM5EPHydAB6gACTaBjbLwfiHxMUEcPhn-8og&amp;oe=6929CF9A"></div>
+                    <div
+                    class="_aagw"></div>
+        </div>
+        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"></div>
+        </a>
+    </div>
+    <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+        <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/noire_in/reel/DQth9caDIlC/"
+        role="link" tabindex="0">
+            <div class="_aagu">
+                <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Детальніше у дописі та відео @ivanna.mal , а петиція у шапці її профілю. Можливо, саме розголос допоможе «намалювати» перехід на метро Університет." class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous"
+                    style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/573942405_17987916257902589_6973328963291710753_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=102&amp;ig_cache_key=Mzc1OTgxMDYyMTg0ODk3OTc3ODE3OTg3OTE2MjUxOTAyNTg5.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=j09sQZtwsd0Q7kNvwH7zkL0&amp;_nc_oc=AdndM7ajv6fkKpxDY3VAGAd4X3saw-HkduoAtT5UEh21uxn_3y3FBfjCuXT0dLhbYzA&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfhZQWJik27wG120ufWrNohfYVE77o5cGlSAnvW1tslxaQ&amp;oe=6929A703"></div>
+                <div
+                class="_aagw"></div>
+    </div>
+    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+        <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+            <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                    <title>Clip</title>
+                    <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </a>
+    </div>
+    <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+        <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/ivanna.mal/p/DQrXassCEqk/"
+        role="link" tabindex="0">
+            <div class="_aagu">
+                <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Не думала, що намалювати розмітку в Києві може бути настільки політичним рішенням.
+
+Поширюйте" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/572164637_18362189524091739_8691980158667473591_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=102&amp;ig_cache_key=Mzc1OTIwMTI4OTA0MTkwMjU5OA%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=oD9_9uMPnFMQ7kNvwHqKvGJ&amp;_nc_oc=AdkRAZQxQRebqrtJQJzZo6LjTYApHKPUlV9cXKxsiTVNzrD_329DjUMrJwDyUfpBqyc&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfheOfZDGi8cnMgMAqcSukJL4Gn_mdAHPE0hfX6lsn2Qkg&amp;oe=6929A5F9"></div>
+                <div
+                class="_aagw"></div>
+    </div>
+    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+        <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+            <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 48 48" width="20">
+                    <title>Carousel</title>
+                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="_ac7v x1ty9z65 xzboxd6">
+        <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+            <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/emo.lite/reel/DQoK11CDRk_/"
+            role="link" tabindex="0">
+                <div class="_aagu">
+                    <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="В шапці профілю @ivanna.mal петиція про наземний перехід біля метро Університет. Ознайомся і підпиши🤍" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.71878-15/572776178_824336903293909_4234491445119742429_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=106&amp;ig_cache_key=Mzc1ODMwMTU2ODU4MDc4NjQ5NQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=_utWyeyI4YEQ7kNvwHp8uNJ&amp;_nc_oc=Adk3lq_bYjmK2IP2v0yN_tWxnl4sXzYJ-YDfrIFJZO2FY7bQpnX9hZIZzAQVt01JTxs&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_Afgq7KcoILT_kSlRar1HBIfDBdZjdZkwiJu8K_PVnT59cg&amp;oe=6929D2E1"></div>
+                    <div
+                    class="_aagw"></div>
+        </div>
+        <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+            <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+                <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                    <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                        <title>Clip</title>
+                        <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+        <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/ivanna.mal/p/DQlyWWhiOPq/"
+        role="link" tabindex="0">
+            <div class="_aagu">
+                <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="2 листопада о 5 ранку ми з друзями зробили те, на що не спромоглась поліція протягом 6 років. 
+
+Звісно, це тимчасове рішення. Ми зробили це, щоб поширити діалог з бульбашки активістів на всю громадськість.
+
+Я вже опублікувала в ютуб відео-пояснення ситуації з переходом. Там усе: від «чому нам потрібен перехід» до «чому він досі не зʼявився».
+
+Посилання в біо" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: cover;" src="https://scontent.cdninstagram.com/v/t51.82787-15/571404781_18361938634091739_7059816253338657590_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=110&amp;ig_cache_key=Mzc1NzYzMDg4NDIyMTA0NDY2Ng%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTQ0MC5zZHIuQzMifQ%3D%3D&amp;_nc_ohc=0tWheEuSAm4Q7kNvwH3UFGh&amp;_nc_oc=Admx-aJOVXKohkRToO5ZcyrU_-l0FpwAhdPehAE9dxedE4VR-fjNcGmGSeQWHttTwys&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_Afjo6pPEmH-rKpos2x6luDpSDVnbCmLsI1C7yo_ciGPetQ&amp;oe=6929D165"></div>
+                <div
+                class="_aagw"></div>
+    </div>
+    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+        <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+            <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 48 48" width="20">
+                    <title>Carousel</title>
+                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </a>
+    </div>
+    <div class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p x14z9mp xhe4ym4 xaudc5v x1j53mea">
+        <a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd" href="/ivanna.mal/reel/DQg1fw4iJmb/"
+        role="link" tabindex="0">
+            <div class="_aagu">
+                <div style="padding-bottom: 133.333%;" class="_aagv"><img alt="Нам потрібен наземний доступний перехід на м. Університет
+
+Більше пояснення чому і чому його досі не втілили, в каруселі в профілі. 
+📌посилання на петицію в шапці профілю" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous" style="object-fit: contain; height: auto; transform: scale(1) translateX(0%) translateY(-0.528402%);" src="https://scontent.cdninstagram.com/v/t51.71878-15/570683016_1158364369732612_5070143397508407230_n.jpg?stp=dst-jpg_e15_tt6&amp;_nc_cat=108&amp;ig_cache_key=Mzc1NjIzNzM2ODQ4Mzk0NDg1OQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&amp;_nc_ohc=d-ahKckEPfgQ7kNvwGCsqad&amp;_nc_oc=Adl4su0fqv3hUQW-zRouLHHriqppLycUnO5K580Ede_gnQ4Vuceoj2AlbXLrFBJxlT4&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=GX3yjUEkjgeDfPPFATSa5A&amp;oh=00_AfgWlqINo53gTJgtlfmisuv5jAxwv6WvpKDqwjwOhK2gdQ&amp;oe=6929CB3A"></div>
+                <div
+                class="_aagw"></div>
+    </div>
+    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+        <div class="xuk3077 x972fbf x10w94by x1qhh985 x14e42zd x1ey2m1c x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xtijo5x x1o0tod x1nhvcw1 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x47corl x10l6tqk x13vifvy x11njtxf">
+            <div class="html-div xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1xmf6yo x1xegmmw x1e56ztr x13fj5qh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20">
+                    <title>Clip</title>
+                    <path d="M22.942 7.464c-.062-1.36-.306-2.143-.511-2.671a5.366 5.366 0 0 0-1.272-1.952 5.364 5.364 0 0 0-1.951-1.27c-.53-.207-1.312-.45-2.673-.513-1.2-.054-1.557-.066-4.535-.066s-3.336.012-4.536.066c-1.36.062-2.143.306-2.672.511-.769.3-1.371.692-1.951 1.272s-.973 1.182-1.27 1.951c-.207.53-.45 1.312-.513 2.673C1.004 8.665.992 9.022.992 12s.012 3.336.066 4.536c.062 1.36.306 2.143.511 2.671.298.77.69 1.373 1.272 1.952.58.581 1.182.974 1.951 1.27.53.207 1.311.45 2.673.513 1.199.054 1.557.066 4.535.066s3.336-.012 4.536-.066c1.36-.062 2.143-.306 2.671-.511a5.368 5.368 0 0 0 1.953-1.273c.58-.58.972-1.181 1.27-1.95.206-.53.45-1.312.512-2.673.054-1.2.066-1.557.066-4.535s-.012-3.336-.066-4.536Zm-7.085 6.055-5.25 3c-1.167.667-2.619-.175-2.619-1.519V9c0-1.344 1.452-2.186 2.619-1.52l5.25 3c1.175.672 1.175 2.368 0 3.04Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <footer class="x1qjc9v5 x9f619 x78zum5 xdt5ytf x2lah0s xk390pu xdj266r x14z9mp xat24cr x1lziwak x1h3rv7z xexx8yu x18d9i69 x1n2onr6 x11njtxf xv54qhq xf7dkkf xl8spv7" style="--x-backgroundColor: rgb(var(--ig-primary-background));" role="contentinfo">
+        <div class="html-div xdj266r x14z9mp x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x5u0ere x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+            <div class="html-div x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xqui205 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np x1a02dak xqjyukv x1qjc9v5 x1oa3qoh xl56j7k">
+                    <div class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://about.meta.com/" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Meta</span></a></div>
+                    <div
+                    class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">About</span></a></div>
+                <div
+                class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://about.instagram.com/blog/" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Blog</span></a></div>
+            <div
+            class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://about.instagram.com/about-us/careers" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Jobs</span></a></div>
+        <div
+        class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://help.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Help</span></a></div>
+            <div
+            class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">API</span></a></div>
+                <div
+                class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                    href="/legal/privacy/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Privacy</span></a></div>
+                    <div
+                    class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                        href="/legal/terms/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Terms</span></a></div>
+                        <div
+                        class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                            href="/explore/locations/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Locations</span></a></div>
+                            <div
+                            class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                                href="/web/lite/" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Instagram Lite</span></a></div>
+                                <div
+                                class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://www.meta.ai/?utm_source=foa_web_footer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Meta AI</span></a></div>
+                                    <div
+                                    class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://www.meta.ai/pages/toyota-rav4-upgrades-and-accessories/?utm_source=foa_web_footer" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Meta AI Articles</span></a></div>
+                                        <div
+                                        class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4" href="https://www.threads.com/" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Threads</span></a></div>
+                                            <div
+                                            class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                                                href="https://www.facebook.com/help/instagram/261704639352628" rel="nofollow noreferrer" role="link" tabindex="0" target="_blank"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Contact Uploading &amp; Non-Users</span></a></div>
+                                                <div
+                                                class="html-div xdj266r xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xod5an3 x13fj5qh x1xegmmw x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><a class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1fhwpqd xz5fbns x1hl2dhg xb5lr1p x6mezaz x1roi4f4 _a6hd"
+                                                    href="/accounts/meta_verified/?entrypoint=web_footer" role="link" tabindex="0"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">Meta Verified</span></a></div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="html-div x14z9mp x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x14vqqas xod5an3 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh xl56j7k"><span class="x1ypdohk x1rg5ohu x1n2onr6 x16dsc37"><div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh xl56j7k"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">English</span>
+                                                        <div
+                                                        class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xdwrcjd x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k"><span style="display: inline-block; transform: rotate(180deg);"><svg aria-label="Down chevron icon" class="x1lliihq x1n2onr6 x1roi4f4" fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Down chevron icon</title><path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"></path></svg></span></div>
+                                                    </div>
+                                                    <select aria-label="Switch Display Language" class="x1ypdohk x5yr21d x1o0tod xg01cxk x10l6tqk x13vifvy xh8yej3">
+                                                        <option value="af">Afrikaans</option>
+                                                        <option value="ar">العربية</option>
+                                                        <option value="cs">Čeština</option>
+                                                        <option value="da">Dansk</option>
+                                                        <option value="de">Deutsch</option>
+                                                        <option value="el">Ελληνικά</option>
+                                                        <option value="en">English</option>
+                                                        <option value="en-gb">English (UK)</option>
+                                                        <option value="es">Español (España)</option>
+                                                        <option value="es-la">Español</option>
+                                                        <option value="fa">فارسی</option>
+                                                        <option value="fi">Suomi</option>
+                                                        <option value="fr">Français</option>
+                                                        <option value="he">עברית</option>
+                                                        <option value="id">Bahasa Indonesia</option>
+                                                        <option value="it">Italiano</option>
+                                                        <option value="ja">日本語</option>
+                                                        <option value="ko">한국어</option>
+                                                        <option value="ms">Bahasa Melayu</option>
+                                                        <option value="nb">Norsk</option>
+                                                        <option value="nl">Nederlands</option>
+                                                        <option value="pl">Polski</option>
+                                                        <option value="pt-br">Português (Brasil)</option>
+                                                        <option value="pt">Português (Portugal)</option>
+                                                        <option value="ru">Русский</option>
+                                                        <option value="sv">Svenska</option>
+                                                        <option value="th">ภาษาไทย</option>
+                                                        <option value="tl">Filipino</option>
+                                                        <option value="tr">Türkçe</option>
+                                                        <option value="zh-cn">中文(简体)</option>
+                                                        <option value="zh-tw">中文(台灣)</option>
+                                                        <option value="bn">বাংলা</option>
+                                                        <option value="gu">ગુજરાતી</option>
+                                                        <option value="hi">हिन्दी</option>
+                                                        <option value="hr">Hrvatski</option>
+                                                        <option value="hu">Magyar</option>
+                                                        <option value="kn">ಕನ್ನಡ</option>
+                                                        <option value="ml">മലയാളം</option>
+                                                        <option value="mr">मराठी</option>
+                                                        <option value="ne">नेपाली</option>
+                                                        <option value="pa">ਪੰਜਾਬੀ</option>
+                                                        <option value="si">සිංහල</option>
+                                                        <option value="sk">Slovenčina</option>
+                                                        <option value="ta">தமிழ்</option>
+                                                        <option value="te">తెలుగు</option>
+                                                        <option value="ur">اردو</option>
+                                                        <option value="vi">Tiếng Việt</option>
+                                                        <option value="zh-hk">中文(香港)</option>
+                                                        <option value="bg">Български</option>
+                                                        <option value="fr-ca">Français (Canada)</option>
+                                                        <option value="ro">Română</option>
+                                                        <option value="sr">Српски</option>
+                                                        <option value="uk">Українська</option>
+                                                    </select>
+                                                    </span>
+                                                    <div class="html-div xdj266r x14z9mp xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xyqm7xq x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"><span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+                                                        style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">© 2025 Instagram from Meta</span></div>
+                                                    </div>
+                                                    </div>
+    </footer>
+    </div>
+</section>
