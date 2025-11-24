@@ -1,83 +1,160 @@
-
-from datetime import timedelta
 from app.postRoute.errors import bad_request, custom404, unauthorized
 from . import authRoute
-from flask import request, jsonify, current_app
+from flask import request, jsonify, render_template, redirect, url_for
+from werkzeug.security import check_password_hash
 from ..models import User, TokenBlocklist
-from datetime import datetime
-from datetime import timezone
 
-from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, current_user
+
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, current_user as jwt_user
 from flask_jwt_extended import decode_token, get_jwt
+from flask_login import login_user, logout_user, current_user
 from .. import db
 
 
-@authRoute.route('/login', methods=['POST'])
+@authRoute.route('/login/', methods=['GET', 'POST'])
 def login():
-    email = request.json.get('email', None)
-    password = request.json.get('password', None)
-
-    user = User.query.filter_by(email=email).first()
-
-    if not user:
-        return bad_request("Email not registred.")
+    """Login route with proper redirect"""
     
-    elif not user.verify_password(password):
-        return bad_request("Incorrect Password.")
+    # If user is already authenticated, redirect to home
+    if current_user.is_authenticated:
+        return redirect(url_for('index'))
+    
+    if request.method == 'POST':
+        # Check if it's JSON (for AJAX) or form data
+        if request.is_json:
+            data = request.get_json(silent=True)
+            if not data:
+                return jsonify({'success': False, 'error': 'Invalid JSON'}), 400
+            
+            username = data.get('username', '').strip()
+            password = data.get('password', '')
+        else:
+            username = request.form.get('username', '').strip()
+            password = request.form.get('password', '')
+        
+        # Validation
+        if not username or not password:
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Username and password required'}), 400
+            else:
+                return render_template('login.html', error='Username and password required')
+        
+        # Find user
+        user = User.query.filter_by(username=username).first()
+        
+        if not user:
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Invalid username or password'}), 401
+            else:
+                return render_template('login.html', error='Invalid username or password')
+        
+        # Check password
+        if not check_password_hash(user.password_hash, password):
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Invalid username or password'}), 401
+            else:
+                return render_template('login.html', error='Invalid username or password')
+        
+        # Login successful - THIS IS THE KEY PART
+        login_user(user, remember=False)
+        
+        # Redirect based on request type
+        if request.is_json:
+            # For AJAX requests, return JSON response
+            return jsonify({
+                'success': True,
+                'message': 'Login successful',
+                'redirect': url_for('index')  # Send redirect URL to frontend
+            }), 200
+        else:
+            # For traditional form submission, redirect directly
+            next_page = request.args.get('next')
+            if next_page:
+                return redirect(next_page)
+            return redirect(url_for('index'))
+    
+    # GET request - show login form
+    return render_template('login.html')
 
-    else:
-        # jwt
-        # config options => https://flask-jwt-extended.readthedocs.io/en/stable/options/#jwt-access-token-expires
-        # more time options => https://docs.python.org/3/library/datetime.html#timedelta-objects
 
-        wrap_data = {"user_id": user.id}
-
-        access_token = create_access_token(
-            identity=email,
-            additional_claims=wrap_data,
-            expires_delta=timedelta(minutes=40)
-        )
-        # print(decode_token(access_token))
-        return jsonify(access_token=access_token, user_id=user.id)
-
-
-@authRoute.route('/logout', methods=['DELETE'])
-@jwt_required()
-def logout():
-    # token_from_client = request.json.get('access_token', None)
-    # token_from_client
-    jti = get_jwt()['jti']
-    now = datetime.now(timezone.utc)
-    db.session.add(TokenBlocklist(jti=jti, created_at=now))
-    db.session.commit()
-
-    return jsonify({ "msg" : "Logged out."})
-
-@authRoute.route('/register', methods=['POST'])
+@authRoute.route('/register', methods=['GET', 'POST'])
 def register():
-    email = request.json.get('email', None)
-    password = request.json.get('password', None)
-    username = request.json.get('username', None)
+    """Register endpoint"""
+    if current_user.is_authenticated:
+        return redirect('/')
+    
+    if request.method == 'GET':
+        return render_template('signup.html')
+    
+    if not request.is_json:
+        return jsonify({'success': False, 'error': 'Content-Type must be application/json'}), 415
 
-    locate_email = User.query.filter_by(email=email.lower()).first()
-    locate_username = User.query.filter_by(username=username).first()
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({'success': False, 'error': 'Invalid JSON'}), 400
 
-    if locate_email:
-        return bad_request('Email already registered.')
-    elif locate_username:
-        return bad_request('Username already taken.')
-    else:
-        user = User(email=email.lower(), username=username, password=password)
-        db.session.add(user)
+    email = data.get('email', '').strip().lower()
+    username = data.get('username', '').strip()
+    password = data.get('password', '')
+    password_confirm = data.get('password_confirm', '')
+
+    print(f"📝 Спроба реєстрації: {email}, {username}")
+
+    # Валідація
+    if not email or not username or not password:
+        return jsonify({'success': False, 'error': 'Fill all fields'}), 400
+
+    if len(username) < 3:
+        return jsonify({'success': False, 'error': 'Username must be at least 3 characters'}), 400
+
+    if len(password) < 6:
+        return jsonify({'success': False, 'error': 'Password must be at least 6 characters'}), 400
+
+    if password != password_confirm:
+        return jsonify({'success': False, 'error': 'Passwords do not match'}), 400
+
+    # Перевіряємо чи існує
+    if User.query.filter_by(email=email).first():
+        return jsonify({'success': False, 'error': 'Email already registered'}), 409
+
+    if User.query.filter_by(username=username).first():
+        return jsonify({'success': False, 'error': 'Username already taken'}), 409
+
+    # Створюємо користувача
+    try:
+        new_user = User(email=email, username=username, password=password)
+        db.session.add(new_user)
         db.session.commit()
+        print(f"✅ Новий користувач: {username}")
+        
+        return jsonify({
+            'success': True,
+            'message': 'Registration successful! Redirecting to login...',
+            'redirect': '/login'
+        }), 201
+    except Exception as e:
+        db.session.rollback()
+        print(f"❌ Помилка реєстрації: {str(e)}")
+        return jsonify({'success': False, 'error': f'Error: {str(e)}'}), 500
 
-        return jsonify({"msg": "Registration Successful, Thanks."})
+
+@authRoute.route('/logout', methods=['GET'])
+def logout():
+    """Logout endpoint"""
+    if current_user.is_authenticated:
+        username = current_user.username
+        logout_user()
+        print(f"✅ Користувач {username} вийшов")
+        return jsonify({'success': True, 'message': 'Logged out'})
+    
+    return redirect('/login')
+
 
 @authRoute.route('/update-password', methods=['POST'])
 @jwt_required()
 def update_passwords():
-
-    user = User.query.get(current_user.id) # current_user in token
+    """Оновлення паролю (JWT захищено)"""
+    user = User.query.get(jwt_user.id)
     old_password = request.json.get('old_password', None)
     new_password = request.json.get('new_password', None)
 
@@ -92,6 +169,4 @@ def update_passwords():
         db.session.add(user)
         db.session.commit()
 
-        return jsonify({ "msg": "Password Updated."}), 200
-
-    
+        return jsonify({"msg": "Password Updated."}), 200

@@ -1,4 +1,4 @@
-# flaskgram
+# Flaskygram
 Python Flask Instagramm emulator
 
 Backend based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
@@ -34,20 +34,19 @@ pip install --only-binary :all: Flask-SQLAlchemy
 - upgrade or update your database
 `flask db upgrade`
 
-- run the project
-`flask run`
-
-- open a new terminal window follow below commands(keep the application running)
-
-`flask shell`
-
+### Initial Setup
 - running following commands in shell
 
     `python scripts/setup_roles.py`
 
     (to avoid roles related issues, by default application will provide you user role permissions), so with below command we are setting up 3 types of roles: User, Moderator and Administrator
+    `python seed.py`
+    (to seed some initial data into the database, this will create 3 users: themepark, blackjack and hookers with password as "password123")
 
-- As your application is entirely new so there is no data in it so go ahead and signup and login to create your new account (i highly recommend to import the json file present in "project_files" directory to ease your work)
+### Running the Application
+
+- finally run the application
+`flask run`
 
 * Note: if the application is not recognizing localhost then use its address instead like this => `http://127.0.0.1:5000/login`, make sure to not include extra slashes "/" at the end of your endpoint or api to avoid not found issues, please use the urls as mentioned in views.
 

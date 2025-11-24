@@ -3,6 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from . import jwt
 from flask import jsonify, current_app, abort
+from flask_login import UserMixin
 
 # scalar()
 """
@@ -93,7 +94,7 @@ class Message(db.Model):
         return json_response
 
 
-class User(db.Model):
+class User(UserMixin, db.Model):
 
     __tablename__ = 'users'
 
@@ -105,6 +106,10 @@ class User(db.Model):
     password_hash = db.Column(db.String(128))
     comments = db.relationship('Comment', backref='author_backref', lazy='dynamic')
     liked = db.relationship('PostLike', backref='user_like_backref', lazy='dynamic')
+    is_active = db.Column(db.Boolean, default=True)
+
+    def get_id(self):
+        return str(self.id)
 
     messages_sent = db.relationship(
         'Message',
@@ -304,9 +309,7 @@ class Post(db.Model):
     __tablename__ = 'posts'
 
     id = db.Column(db.Integer, primary_key=True)
-    # title = db.Column(db.String(200), index=True)
     body = db.Column(db.Text)
-    # body_html = db.Column(db.Text)
     uploaded_content_url = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
@@ -316,29 +319,39 @@ class Post(db.Model):
     def __repr__(self):
         return '<Post %r>' % self.body
 
+    # ✅ ДОДАЙ ЦІ ВЛАСТИВОСТІ
+    @property
+    def comments_count(self):
+        """Повертає кількість коментарів"""
+        return self.comments.count()
+    
+    @property
+    def likes_count(self):
+        """Повертає кількість лайків"""
+        return self.likes.count()
+    
+    @property
+    def created_at(self):
+        """Alias для timestamp (якщо в шаблоні використовуєш created_at)"""
+        return self.timestamp
+
     # post into json format
     def to_json(self):
-        # where self contains the whole post object
-        # print(self.comments.all()) # holds all the comments
         locate_user = User.query.get(self.author_id)     
 
-        # ordered by latest comments
         json_post = {
             'id': self.id,
             'author_details': locate_user.less_user_info_json(), 
             'uploaded_content_url': self.uploaded_content_url,
             'body': self.body,
             'timestamp': self.timestamp,
+            'comments_count': self.comments_count,  # ✅ ТЕ ДОДАНО
+            'likes_count': self.likes_count,        # ✅ ТЕ ДОДАНО
             'likes': [each_like.like_json() for each_like in self.likes],
             'comments': [each_comm.comment_in_json() for each_comm in self.comments.order_by(Comment.timestamp.desc())]
         }
 
         return json_post
-
-    # @staticmethod
-    # def get_comments():
-    #     print("recieved:", self)
-    #     return True
 
 
 class Permission:
