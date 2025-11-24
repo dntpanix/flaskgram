@@ -69,7 +69,7 @@ def create_app(config_name):
         print(f"📄 Користувач {current_user.username} на головній")
         
         try:
-            posts = Post.query.order_by(Post.created_at.desc()).all()
+            posts = Post.query.order_by(Post.timestamp.desc()).all()
             print(f"📊 Знайдено {len(posts)} постів")
         except Exception as e:
             print(f"❌ Помилка постів: {e}")

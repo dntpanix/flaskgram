@@ -3,6 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from . import jwt
 from flask import jsonify, current_app, abort
+from flask_login import UserMixin
 
 # scalar()
 """
@@ -93,7 +94,7 @@ class Message(db.Model):
         return json_response
 
 
-class User(db.Model):
+class User(UserMixin, db.Model):
 
     __tablename__ = 'users'
 
@@ -107,18 +108,8 @@ class User(db.Model):
     liked = db.relationship('PostLike', backref='user_like_backref', lazy='dynamic')
     is_active = db.Column(db.Boolean, default=True)
 
-
     def get_id(self):
         return str(self.id)
-    
-    @property
-    def is_authenticated(self):
-        # Check if attribute was set, otherwise return default
-        return getattr(self, '_is_authenticated', False)
-    
-    @is_authenticated.setter
-    def is_authenticated(self, value):
-        self._is_authenticated = value
 
     messages_sent = db.relationship(
         'Message',

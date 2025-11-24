@@ -1,10 +1,9 @@
-from datetime import timedelta
 from app.postRoute.errors import bad_request, custom404, unauthorized
 from . import authRoute
-from flask import request, jsonify, current_app, render_template, redirect
+from flask import request, jsonify, render_template, redirect, url_for
+from werkzeug.security import check_password_hash
 from ..models import User, TokenBlocklist
-from datetime import datetime
-from datetime import timezone
+
 
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, current_user as jwt_user
 from flask_jwt_extended import decode_token, get_jwt
@@ -12,63 +11,70 @@ from flask_login import login_user, logout_user, current_user
 from .. import db
 
 
-@authRoute.route('/login', methods=['GET', 'POST'])
+@authRoute.route('/login/', methods=['GET', 'POST'])
 def login():
-    """Login endpoint - використовує Flask-Login сесії"""
-    # Якщо вже залогінений
+    """Login route with proper redirect"""
+    
+    # If user is already authenticated, redirect to home
     if current_user.is_authenticated:
-        return redirect('/')
+        return redirect(url_for('index'))
     
-    # GET - повертаємо HTML форму
-    if request.method == 'GET':
-        return render_template('login.html')
-    
-    # POST - обробляємо логін
-    if not request.is_json:
-        return jsonify({
-            'success': False,
-            'error': "Content-Type must be 'application/json'"
-        }), 415
-
-    data = request.get_json(silent=True)
-    if not data:
-        return jsonify({'success': False, 'error': 'Invalid JSON'}), 400
-    
-    email = None
-    username = None
-    user_login = data.get('username')
-    if "@" in user_login and "." in user_login:
-        email = user_login.strip().lower()
-    else:
-        username = user_login.strip().lower()
-    password = data.get('password', '')
-
-    print(f"🔐 Спроба логіну: email={email}, username={username}")
-
-    # Шукаємо користувача
-    user = None
-    if email:
-        user = User.query.filter_by(email=email).first()
-    elif username:
-        user = User.query.filter_by(username=username).first()
-    
-    if user and user.verify_password(password):
-        # ✅ Успішна аутентифікація
-        print(f"✅ Користувач {user.username} залогінився")
+    if request.method == 'POST':
+        # Check if it's JSON (for AJAX) or form data
+        if request.is_json:
+            data = request.get_json(silent=True)
+            if not data:
+                return jsonify({'success': False, 'error': 'Invalid JSON'}), 400
+            
+            username = data.get('username', '').strip()
+            password = data.get('password', '')
+        else:
+            username = request.form.get('username', '').strip()
+            password = request.form.get('password', '')
         
-        return jsonify({
-            'success': True,
-            'redirect': '/',
-            'user_id': user.id,
-            'username': user.username,
-            'message': 'Login successful!'
-        }), 200
-    else:
-        print(f"❌ Невдала спроба логіну")
-        return jsonify({
-            'success': False, 
-            'error': 'Invalid credentials'
-        }), 401
+        # Validation
+        if not username or not password:
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Username and password required'}), 400
+            else:
+                return render_template('login.html', error='Username and password required')
+        
+        # Find user
+        user = User.query.filter_by(username=username).first()
+        
+        if not user:
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Invalid username or password'}), 401
+            else:
+                return render_template('login.html', error='Invalid username or password')
+        
+        # Check password
+        if not check_password_hash(user.password_hash, password):
+            if request.is_json:
+                return jsonify({'success': False, 'error': 'Invalid username or password'}), 401
+            else:
+                return render_template('login.html', error='Invalid username or password')
+        
+        # Login successful - THIS IS THE KEY PART
+        login_user(user, remember=False)
+        
+        # Redirect based on request type
+        if request.is_json:
+            # For AJAX requests, return JSON response
+            return jsonify({
+                'success': True,
+                'message': 'Login successful',
+                'redirect': url_for('index')  # Send redirect URL to frontend
+            }), 200
+        else:
+            # For traditional form submission, redirect directly
+            next_page = request.args.get('next')
+            if next_page:
+                return redirect(next_page)
+            return redirect(url_for('index'))
+    
+    # GET request - show login form
+    return render_template('login.html')
 
 
 @authRoute.route('/register', methods=['GET', 'POST'])
