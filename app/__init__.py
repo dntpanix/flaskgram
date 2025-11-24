@@ -1,5 +1,5 @@
 import datetime
-from flask import Flask, render_template, request, jsonify, session, send_from_directory #redirect, url_for
+from flask import Flask, render_template, request, jsonify, session, send_from_directory, redirect#, url_for
 from flask_sqlalchemy import SQLAlchemy
 from config import config
 from flask_cors import CORS
@@ -20,8 +20,7 @@ def create_app(config_name):
     db.init_app(app)
     jwt.init_app(app)
     login_manager.init_app(app)
-    # якщо потрібно, можна вказати view у blueprint: 'auth.login'
-    login_manager.login_view = 'login' 
+    login_manager.login_view = 'authRoute.login' 
 
     from .postRoute import postRoute as postRouteBlueprint
     app.register_blueprint(postRouteBlueprint) 
@@ -61,44 +60,22 @@ def create_app(config_name):
         return send_from_directory(os.path.join(app.root_path, 'static'),
                                 'images/favicon.png', mimetype='image/vnd.microsoft.icon')
 
+
+
     @app.route('/')
     @login_required
     def index():
         """Головна сторінка - стрічка новин"""
-        posts = get_posts_for_feed()
-        # передаємо posts у шаблон, щоб UI використовував дані з API/бази
-        return render_template('feed.html', posts=posts)
-
-    @app.route('/login', methods=['GET', 'POST'])
-    def login():
-        """Сторінка логіну"""
-        if request.method == 'GET':
-            return render_template('login.html')
-        # Перевіряємо що це JSON запит
-        if not request.is_json:
-            return jsonify({
-                'success': False,
-                'error': "Unsupported Media Type. Content-Type must be 'application/json'"
-            }), 415
-
-        data = request.get_json(silent=True)
-        if not data:
-            return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
-
-        email = data.get('username', '').strip()
-        password = data.get('password', '')
-
-        if not email or not password:
-            return jsonify({'success': False, 'error': 'Missing username or password'}), 400
-
-        # Аутентифікація
-        user = User.query.filter_by(email=email).first()
-        if user and user.check_password(password):
-            login_user(user)  # створює flask-login сесію
-            return jsonify({'success': True, 'redirect': '/'})
-        else:
-            return jsonify({'success': False, 'error': 'Invalid credentials'}), 401
+        print(f"📄 Користувач {current_user.username} на головній")
         
+        try:
+            posts = Post.query.order_by(Post.created_at.desc()).all()
+            print(f"📊 Знайдено {len(posts)} постів")
+        except Exception as e:
+            print(f"❌ Помилка постів: {e}")
+            posts = []
+        
+        return render_template('feed.html', posts=posts)
 
     @app.route('/profile/<username>')
     def profile(username):
@@ -202,52 +179,59 @@ def create_app(config_name):
     @app.route('/accounts/emailsignup/', methods=['GET', 'POST'])
     def signup():
         """Сторінка реєстрації"""
-        if request.method == 'GET':
-            return render_template('signup.html')
+        if current_user.is_authenticated:
+            return redirect('/')
         
-        # Перевіряємо що це JSON запит
-        if not request.is_json:
-            return jsonify({
-                'success': False,
-                'error': "Unsupported Media Type. Content-Type must be 'application/json'"
-            }), 415
+        if request.method == 'POST':
+            if not request.is_json:
+                return jsonify({'success': False, 'error': 'Content-Type must be application/json'}), 415
 
-        data = request.get_json(silent=True)
-        if not data:
-            return jsonify({'success': False, 'error': 'Invalid JSON body'}), 400
+            data = request.get_json(silent=True)
+            if not data:
+                return jsonify({'success': False, 'error': 'Invalid JSON'}), 400
 
-        email = data.get('email', '').strip().lower()
-        username = data.get('username', '').strip()
-        password = data.get('password', '')
-        password_confirm = data.get('password_confirm', '')
+            email = data.get('email', '').strip().lower()
+            username = data.get('username', '').strip()
+            password = data.get('password', '')
+            password_confirm = data.get('password_confirm', '')
 
-        # ✅ Валідація
-        if not email or not username or not password:
-            return jsonify({'success': False, 'error': 'Заповніть всі поля'}), 400
+            # ✅ Валідація
+            if not email or not username or not password:
+                return jsonify({'success': False, 'error': 'Fill all fields'}), 400
 
-        if len(password) < 6:
-            return jsonify({'success': False, 'error': 'Пароль має бути мінімум 6 символів'}), 400
+            if len(username) < 3:
+                return jsonify({'success': False, 'error': 'Username must be at least 3 characters'}), 400
 
-        if password != password_confirm:
-            return jsonify({'success': False, 'error': 'Паролі не збігаються'}), 400
+            if len(password) < 6:
+                return jsonify({'success': False, 'error': 'Password must be at least 6 characters'}), 400
 
-        # ✅ Перевіряємо чи існує користувач
-        existing_email = User.query.filter_by(email=email).first()
-        if existing_email:
-            return jsonify({'success': False, 'error': 'Цей email вже зареєстрований'}), 409
+            if password != password_confirm:
+                return jsonify({'success': False, 'error': 'Passwords do not match'}), 400
 
-        existing_username = User.query.filter_by(username=username).first()
-        if existing_username:
-            return jsonify({'success': False, 'error': 'Це ім\'я користувача вже займяте'}), 409
+            # ✅ Перевіряємо чи існує
+            if User.query.filter_by(email=email).first():
+                return jsonify({'success': False, 'error': 'Email already registered'}), 409
 
-        # ✅ Створюємо новго користувача
-        try:
-            new_user = User(email=email, username=username, password=password)
-            db.session.add(new_user)
-            db.session.commit()
-            return jsonify({'success': True, 'message': 'Реєстрація успішна! Перенаправлення на логін...', 'redirect': '/login'})
-        except Exception as e:
-            db.session.rollback()
-            return jsonify({'success': False, 'error': 'Помилка при реєстрації: ' + str(e)}), 500
+            if User.query.filter_by(username=username).first():
+                return jsonify({'success': False, 'error': 'Username already taken'}), 409
+
+            # ✅ Створюємо користувача
+            try:
+                new_user = User(email=email, username=username, password=password)
+                db.session.add(new_user)
+                db.session.commit()
+                print(f"✅ Новий користувач зареєстрований: {username}")
+                
+                return jsonify({
+                    'success': True,
+                    'message': 'Registration successful! Redirecting to login...',
+                    'redirect': '/login'
+                }), 201
+            except Exception as e:
+                db.session.rollback()
+                print(f"❌ Помилка реєстрації: {str(e)}")
+                return jsonify({'success': False, 'error': f'Registration error: {str(e)}'}), 500
+        
+        return render_template('signup.html')
 
     return app

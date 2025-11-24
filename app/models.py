@@ -105,6 +105,20 @@ class User(db.Model):
     password_hash = db.Column(db.String(128))
     comments = db.relationship('Comment', backref='author_backref', lazy='dynamic')
     liked = db.relationship('PostLike', backref='user_like_backref', lazy='dynamic')
+    is_active = db.Column(db.Boolean, default=True)
+
+
+    def get_id(self):
+        return str(self.id)
+    
+    @property
+    def is_authenticated(self):
+        # Check if attribute was set, otherwise return default
+        return getattr(self, '_is_authenticated', False)
+    
+    @is_authenticated.setter
+    def is_authenticated(self, value):
+        self._is_authenticated = value
 
     messages_sent = db.relationship(
         'Message',
