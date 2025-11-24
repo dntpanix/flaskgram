@@ -74,21 +74,21 @@ def seed_database():
         # blackjack's posts
         post1 = Post(
             body='Hello! This is my first post! 👋',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=blackjack+Post+1',
+            uploaded_content_url='https://placehold.co/500x500?text=blackjack+Post+1',
             author_id=user1.id,
             timestamp=now - timedelta(hours=3)
         )
         
         post2 = Post(
             body='Beautiful sunset today! 🌅 Nature is amazing!',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Sunset',
+            uploaded_content_url='https://placehold.co/500x500?text=Sunset',
             author_id=user1.id,
             timestamp=now - timedelta(hours=2)
         )
         
         post3 = Post(
             body='Just finished a great book! Highly recommend it to everyone 📚',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Book',
+            uploaded_content_url='https://placehold.co/500x500?text=Book',
             author_id=user1.id,
             timestamp=now - timedelta(hours=1)
         )
@@ -96,21 +96,21 @@ def seed_database():
         # hookers's posts
         post4 = Post(
             body='Coding all day! 💻 Love what I do',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=hookers+Code',
+            uploaded_content_url='https://placehold.co/500x500?text=hookers+Code',
             author_id=user2.id,
             timestamp=now - timedelta(hours=4)
         )
         
         post5 = Post(
             body='Coffee time! ☕ Best part of the day',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Coffee',
+            uploaded_content_url='https://placehold.co/500x500?text=Coffee',
             author_id=user2.id,
             timestamp=now - timedelta(hours=2)
         )
         
         post6 = Post(
             body='Working out at the gym 💪 Stay healthy!',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Gym',
+            uploaded_content_url='https://placehold.co/500x500?text=Gym',
             author_id=user2.id,
             timestamp=now - timedelta(minutes=30)
         )
@@ -118,21 +118,21 @@ def seed_database():
         # themepark's posts
         post7 = Post(
             body='Just traveled to a new city! 🗽 Amazing experience!',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Travel',
+            uploaded_content_url='https://placehold.co/500x500?text=Travel',
             author_id=user3.id,
             timestamp=now - timedelta(hours=5)
         )
         
         post8 = Post(
             body='Cooking dinner for my family 🍝 Delicious!',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Cooking',
+            uploaded_content_url='https://placehold.co/500x500?text=Cooking',
             author_id=user3.id,
             timestamp=now - timedelta(hours=1)
         )
         
         post9 = Post(
             body='Movie night with friends! 🎬 Popcorn time!',
-            uploaded_content_url='https://via.placeholder.com/500x500?text=Movie',
+            uploaded_content_url='https://placehold.co/500x500?text=Movie',
             author_id=user3.id,
             timestamp=now - timedelta(minutes=15)
         )

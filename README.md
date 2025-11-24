@@ -1,4 +1,4 @@
-# flaskgram
+# Flaskygram
 Python Flask Instagramm emulator
 
 Backend based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
