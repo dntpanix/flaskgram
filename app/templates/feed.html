@@ -1,138 +1,163 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="xdt5ytf">
-    <div class="x1n2onr6">
-        {% for post in posts %}
-        <!-- Post Article -->
-        <article class="x1lliihq x1n2onr6 xh8yej3 x4gyw5p" data-post-id="{{ post.id }}" role="presentation">
-            <!-- Post Header -->
-            <header class="x1iyjqo2 xh8yej3">
-                <div class="_aarf">
-                    <div class="_aadp">
-                        <a href="/profile/testuser" role="link" tabindex="0">
-                            <img src="https://via.placeholder.com/32" alt="testuser's profile picture" class="_aadq">
-                        </a>
-                    </div>
-                    <div class="_ap3a">
-                        <div class="x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x10wh9bi x1wdrske x8viiok x18hxmgj" dir="auto">
-                            <a class="_aacl _aaco _aacw _aad6 _aade" href="/profile/testuser" role="link" tabindex="0">testuser</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="x1rg5ohu">
-                    <button class="x1i10hfl" type="button" aria-label="Більше опцій">
-                        <svg aria-label="Більше опцій" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
-                            <circle cx="12" cy="12" r="1.5"></circle>
-                            <circle cx="6" cy="12" r="1.5"></circle>
-                            <circle cx="18" cy="12" r="1.5"></circle>
-                        </svg>
-                    </button>
-                </div>
-            </header>
-            
-            <!-- Post Image -->
-            <div class="_aagv">
-                <div class="_aagw">
-                    <img alt="Фото опубліковано testuser" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" src="{{ post.image_url }}" style="object-fit: cover;">
-                </div>
-            </div>
-            
-            <!-- Post Actions & Info -->
-            <div class="x1n2onr6 xh8yej3 x1ja2u2z">
-                <!-- Action Buttons -->
-                <section class="x6s0dn4 x78zum5 xdt5ytf x5yr21d">
-                    <span class="x1rg5ohu xp7jhwk">
-                        <button class="x1i10hfl xjbqb8w like-btn" type="button" data-post-id="{{ post.id }}" aria-label="Вподобати">
-                            <div class="_aamw">
-                                <svg aria-label="Вподобати" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                    <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
-                                </svg>
-                            </div>
-                        </button>
-                    </span>
-                    
-                    <span class="x1rg5ohu xp7jhwk">
-                        <button class="x1i10hfl xjbqb8w comment-btn" type="button" aria-label="Коментувати">
-                            <div class="_aamw">
-                                <svg aria-label="Коментувати" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                    <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
-                                </svg>
-                            </div>
-                        </button>
-                    </span>
-                    
-                    <span class="x1rg5ohu xp7jhwk">
-                        <button class="x1i10hfl xjbqb8w share-btn" type="button" aria-label="Поділитися публікацією">
-                            <div class="_aamw">
-                                <svg aria-label="Поділитися публікацією" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                    <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                                    <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                                </svg>
-                            </div>
-                        </button>
-                    </span>
-                    
-                    <div class="x1n2onr6 x1ja2u2z x78zum5">
-                        <span class="x1rg5ohu xp7jhwk">
-                            <button class="x1i10hfl xjbqb8w bookmark-btn" type="button" aria-label="Зберегти">
-                                <div class="_aamw">
-                                    <svg aria-label="Зберегти" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                        <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
-                                    </svg>
+<section class="x78zum5 xdt5ytf x1iyjqo2 xg6iff7">
+  <div data-visualcompletion="ignore-dynamic">
+    <main class="xvbhtw8 x78zum5 xdt5ytf x1iyjqo2 xl56j7k" role="main">
+      <div class="x1qjc9v5 x78zum5 x1q0g3np xl56j7k xh8yej3">
+        <div style="max-width: 630px; width: 100%;">
+          <div class="xw7yly9">
+            <div class="xmnaoh6">
+              <div data-pagelet="story_tray">
+                <div>
+                  <div class="x1njnjl6">
+                    <div class="x1qjc9v5 x9f619 x78zum5 xdt5ytf xln7xf2 xk390pu x5yr21d x1n2onr6 x11njtxf xh8yej3">
+                      <div class="x1qjc9v5 x1q0g3np x5yr21d xw2csxc x10wlt62 x1n2onr6 x1rohswg x78zum5 x1y1aw1k xrw5ot4 xwib8y2 x7coems xfk6m8" role="presentation" style="">
+                        <div class="x1qjc9v5 x9f619 x78zum5 x1q0g3np xln7xf2 xk390pu x5yr21d x1n2onr6 x11njtxf" style="">
+                          <ul class="_acay">
+                            <li style="transform: translateX(207px); width: 1px;">
+                            </li>
+                            <li class="_acaz" style="transform: translateX(0px);" tabindex="-1">
+                              <div aria-label="Story by viktoriia_chaban_hr, not seen" class="x1i10hfl xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x6s0dn4 x78zum5 xdt5ytf xl56j7k x1n2onr6 x51sbo7" role="button" tabindex="0">
+                                <div class="x1n2onr6">
+                                  <div class="x6s0dn4 x78zum5 xl56j7k x1iorvi4 xf159sx xwib8y2 xmzvs34">
+                                    <div class="x6s0dn4 xamitd3 x1lliihq xl56j7k x1n2onr6 x1ypdohk">
+                                      <canvas class="x1upo8f9 xpdipgo x87ps6o" height="89" style="left: -7.5px; position: absolute; top: -7.5px; height: 89px; width: 89px;" width="89">
+                                      </canvas>
+                                      <span class="xnz67gz x1c9tyrk xeusxvb x1pahc9y x1ertn4p x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 xzfakq xhihtb0 x1j8hi7x x172hklt xrw4ojt xg6frx5 xw872ko xhgbb2x xynf4tj xdjs2zz x1r9ni5o xvsnedh xoiy6we x16ouz9t x1qj619r xsrjr5h x1xrz1ek x1s928wv x1unh1gc x1iygr5g x2q1x1w x1j6awrg x1m1drc7 x1ypdohk" role="link" style="height: 74px; width: 74px;" tabindex="0">
+                                        <img alt="viktoriia_chaban_hr's profile picture" class="xpdipgo x972fbf x10w94by x1qhh985 x14e42zd xk390pu x5yr21d xdj266r x14z9mp xat24cr x1lziwak xl1xv1r xexx8yu xyri2b x18d9i69 x1c1uobl x11njtxf xh8yej3" crossorigin="anonymous" draggable="false" src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-19/549295840_18520475095015259_3747785401564463419_n.jpg?stp=dst-jpg_s150x150_tt6&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&amp;_nc_ht=instagram.fiev6-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_oc=Q6cZ2QH8jBV33gj-zcFn86Eig9ziGQYjdSk9_k7nq0NX27PKe653EJHdBFU5G4lfZqdwXs0&amp;_nc_ohc=QqSHf4tvl3UQ7kNvwHqYmQ9&amp;_nc_gid=fV8bR-TVWgTKntWb9Cq3Xg&amp;edm=APNOSGoBAAAA&amp;ccb=7-5&amp;oh=00_AfjZxleI-sQF_KPrEVdmcqf7ILT7bRKydrpkSNze56eoAg&amp;oe=6929C5B3&amp;_nc_sid=ca40e6">
+                                      </span>
+                                    </div>
+                                  </div>
                                 </div>
-                            </button>
-                        </span>
+                                <div class="x4e6jrt">
+                                  <span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">
+                                    <span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">viktoriia_chaban_hr</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="_acaz" style="transform: translateX(104px);" tabindex="-1">
+                              <div aria-label="Story by ababahalamaha, not seen" class="x1i10hfl xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xdl72j9 x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x6s0dn4 x78zum5 xdt5ytf xl56j7k x1n2onr6 x51sbo7" role="button" tabindex="0">
+                                <div class="x1n2onr6">
+                                  <div class="x6s0dn4 x78zum5 xl56j7k x1iorvi4 xf159sx xwib8y2 xmzvs34">
+                                    <div class="x6s0dn4 xamitd3 x1lliihq xl56j7k x1n2onr6 x1ypdohk">
+                                      <canvas class="x1upo8f9 xpdipgo x87ps6o" height="89" style="left: -7.5px; position: absolute; top: -7.5px; height: 89px; width: 89px;" width="89">
+                                      </canvas>
+                                      <span class="xnz67gz x1c9tyrk xeusxvb x1pahc9y x1ertn4p x9f619 x1lliihq x2lah0s x6ikm8r x10wlt62 x1n2onr6 xzfakq xhihtb0 x1j8hi7x x172hklt xrw4ojt xg6frx5 xw872ko xhgbb2x xynf4tj xdjs2zz x1r9ni5o xvsnedh xoiy6we x16ouz9t x1qj619r xsrjr5h x1xrz1ek x1s928wv x1unh1gc x1iygr5g x2q1x1w x1j6awrg x1m1drc7 x1ypdohk" role="link" style="height: 74px; width: 74px;" tabindex="0">
+                                        <img alt="ababahalamaha's profile picture" class="xpdipgo x972fbf x10w94by x1qhh985 x14e42zd xk390pu x5yr21d xdj266r x14z9mp xat24cr x1lziwak xl1xv1r xexx8yu xyri2b x18d9i69 x1c1uobl x11njtxf xh8yej3" crossorigin="anonymous" draggable="false" src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-19/292422647_587265289495735_6573183509910945159_n.jpg?stp=dst-jpg_s150x150_tt6&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby40MDAuYzIifQ&amp;_nc_ht=instagram.fiev6-1.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_oc=Q6cZ2QGXzt2l6pH1_MRZgYT5zUmA3eYrtUhvQFHroXB_ux6oyULVdY-XQF1L5w0Wt9D3Qx8&amp;_nc_ohc=ejhxhF1EUx0Q7kNvwHuho7e&amp;_nc_gid=1u4EU6bV9iu03OkyQWd_iw&amp;edm=APNOSGoBAAAA&amp;ccb=7-5&amp;oh=00_AfhxIx7vRrqFKPoF5FALcHpqEW4Ih077qHRZRDiWFBb7sw&amp;oe=6929B540&amp;_nc_sid=ca40e6">
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="x4e6jrt">
+                                  <span class="x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx" style="--x---base-line-clamp-line-height: 16px; --x-lineHeight: 16px;" dir="auto">
+                                    <span class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">ababahalamaha</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                </section>
-                
-                <!-- Likes Count -->
-                <section class="x1qjc9v5">
-                    <div class="x1n2onr6">
-                        <a class="_aacl _aaco _aacu _aacx _aad7 _aade" href="#" role="button" tabindex="0">
-                            <span class="likes-count" data-likes="{{ post.likes }}">{{ post.likes }}</span> вподобань
-                        </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+              <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xf68679 x5lhr3w xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1" style="--x-maxWidth: 100%; --x-width: min(470px, 100vw);">
+                <div>
+                  <div style="display: flex; flex-direction: column; padding-bottom: 6442px; padding-top: 0px; position: relative;">
+                    <!-- paste article here -->
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                    {% include 'feeditems/article.html' %}
+                  </div>
+                </div>
+                <div class="x1qjc9v5 x972fbf x10w94by x1qhh985 x14e42zd x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu xsdox4t x14z9mp xat24cr x1lziwak x1tfhste xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x11njtxf">
+                  <div data-visualcompletion="loading-state" class="x78zum5 xdt5ytf xl56j7k x1nrll8i x10l6tqk xwa60dl x11lhmoz" role="progressbar" style="height: 32px; width: 32px;" tabindex="-1">
+                    <svg aria-label="Loading..." class="xemfg65 xa4qsjk x1ka1v4i xbv57ra" role="img" viewBox="0 0 100 100">
+                      <rect class="x1i210e2" height="6" opacity="0" rx="3" ry="3" transform="rotate(-90 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.08333333333333333" rx="3" ry="3" transform="rotate(-60 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.16666666666666666" rx="3" ry="3" transform="rotate(-30 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.25" rx="3" ry="3" transform="rotate(0 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.3333333333333333" rx="3" ry="3" transform="rotate(30 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.4166666666666667" rx="3" ry="3" transform="rotate(60 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.5" rx="3" ry="3" transform="rotate(90 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.5833333333333334" rx="3" ry="3" transform="rotate(120 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.6666666666666666" rx="3" ry="3" transform="rotate(150 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.75" rx="3" ry="3" transform="rotate(180 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.8333333333333334" rx="3" ry="3" transform="rotate(210 50 50)" width="25" x="72" y="47">
+                      </rect>
+                      <rect class="x1i210e2" height="6" opacity="0.9166666666666666" rx="3" ry="3" transform="rotate(240 50 50)" width="25" x="72" y="47">
+                      </rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="x1dr59a3 x13vifvy x7vhb2i x6bx242">
+          <div class="html-div x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xseo6mj x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+            <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xv54qhq xf7dkkf x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+              <div class="html-div xdj266r xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 x5lhr3w xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x2fvf9 x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1" style="--x-width: 100%;">
+                <div class="x1qnrgzn x1cek8b2 xb10e19 x19rwo8q x1lliihq x193iq5w xh8yej3">
+                  <div class="html-div xdj266r x14z9mp xat24cr x1lziwak x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xyri2b x1c1uobl x18d9i69 xexx8yu x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                    <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x1qjc9v5 x9f619 x78zum5 xdt5ytf x1iyjqo2 xl56j7k xeuugli">
+                      {% include 'feeditems/current_user.html' %}
                     </div>
-                </section>
-                
-                <!-- Caption -->
-                <div class="_a9zs">
-                    <h1 class="_aacl _aaco _aacu _aacx _aad7 _aade" style="font-size: 14px; font-weight: 400; line-height: 18px;">
-                        <span class="_aacl _aaco _aacw _aad6 _aade" style="font-weight: 600;">testuser</span>
-                        <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto">{{ post.caption }}</span>
-                    </h1>
+                  </div>
                 </div>
-                
-                <!-- View Comments -->
-                {% if post.comments_count > 0 %}
-                <button class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft view-comments" type="button">
-                    <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto">Переглянути всі коментарі ({{ post.comments_count }})</span>
-                </button>
-                {% endif %}
-                
-                <!-- Timestamp -->
-                <div class="_aaqe">
-                    <time class="_aaqg notranslate" datetime="{{ post.timestamp }}" title="15 січня 2024 р. о 12:00">5 годин тому</time>
-                </div>
+              </div>
+            </div>
+            <div class="html-div x14z9mp x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xqui205 x1e56ztr x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+              <div class="html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw xyqm7xq x1ys307a x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                <div class="x78zum5 xdt5ytf xdj266r x14z9mp xod5an3 x162z183 x1j7kr1c xvbhtw8">
+                  {% include 'components/suggested_for_you.html' %}
+              </div>
             </div>
             
-            <!-- Comment Input -->
-            <section class="x1n2onr6 xh8yej3 x1ja2u2z x1c4vz4f">
-                <form class="x1n2onr6 xh8yej3 x1ja2u2z" method="POST">
-                    <div class="x6s0dn4 x78zum5 x1q0g3np xdt5ytf x1n2onr6 xh8yej3" style="flex-grow: 1;">
-                        <textarea class="x1i10hfl xjqpnuy comment-input" aria-label="Додати коментар..." placeholder="Додати коментар..." autocomplete="off" autocorrect="off" data-post-id="{{ post.id }}" style="height: 18px; max-height: 80px; overflow: hidden !important; resize: none;"></textarea>
-                    </div>
-                    <button class="x1ypdohk x972fbf xcfux6l x1qhh985 xm0m39n post-comment-btn" type="button" disabled>
-                        <div class="x6s0dn4 x78zum5 xl56j7k x1608yet xljgi0e x1e0frkt">
-                            <span class="_aacl _aaco _aacu _aacx _aad7 _aade" dir="auto" style="line-height: 18px;">Опублікувати</span>
-                        </div>
-                    </button>
-                </form>
-            </section>
-        </article>
-        {% endfor %}
-    </div>
-</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include 'components/footer.html' %}
+  </div>
+</section>
 
 <script src="{{ url_for('static', filename='js/feed.js') }}"></script>
 {% endblock %}
