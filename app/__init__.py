@@ -75,7 +75,7 @@ def create_app(config_name):
             print(f"❌ Помилка постів: {e}")
             posts = []
         
-        return render_template('feed.html', posts=posts)
+        return render_template('feed.html', posts=posts, user=current_user)
 
     @app.route('/profile/<username>')
     def profile(username):
