@@ -6,27 +6,27 @@ from app.models import User, Post, PostLike, Follow, Role
 from datetime import datetime, timedelta
 
 def seed_database():
-    """Додає тестові дані до бази"""
+    """Adds test data to the database"""
     
     app = create_app('development')  # або твій конфіг
     
     with app.app_context():
         # 1. Видалити старі дані (опціонально)
-        print("🗑️ Очищуємо старі дані...")
+        print("🗑️ Clearing old data...")
         db.drop_all()
         db.create_all()
         
         # 2. Створити ролі
-        print("👤 Створюємо ролі...")
+        print("👤 Creating roles...")
         Role.insert_roles()
         
         # 3. Створити користувачів
-        print("👥 Створюємо користувачів...")
+        print("👥 Creating users...")
         
         user1 = User(
             email='blackjack@example.com',
             username='blackjack',
-            user_image_url='https://i.pravatar.cc/150?img=1',
+            user_image_url='https://i.pravatar.cc/150?img=10',
             is_active=True,
             role_id=1  # User
         )
@@ -35,7 +35,7 @@ def seed_database():
         user2 = User(
             email='hookers@example.com',
             username='hookers',
-            user_image_url='https://i.pravatar.cc/150?img=2',
+            user_image_url='https://i.pravatar.cc/150?img=5',
             is_active=True,
             role_id=2  # Moderator
         )
@@ -46,16 +46,16 @@ def seed_database():
             username='themepark',
             user_image_url='https://i.pravatar.cc/150?img=3',
             is_active=True,
-            role_id=3
+            role_id=3 # Administrator
         )
         user3.password = 'password123'
         
         db.session.add_all([user1, user2, user3])
         db.session.commit()
-        print(f"Створено 3 користувачів: themepark, blackjack and hookers")
+        print(f"Created 3 users: {user3.username}, {user1.username} and {user2.username}")
         
         # 4. Створити Follow (кисло та боб слідять за алісою)
-        print("🔗 Додаємо підписки...")
+        print("🔗 Adding followers...")
         
         follow1 = Follow(follower_id=user2.id, following_to=user1.id)  # hookers follows blackjack
         follow2 = Follow(follower_id=user3.id, following_to=user1.id)  # themepark follows blackjack
@@ -63,11 +63,11 @@ def seed_database():
         
         db.session.add_all([follow1, follow2, follow3])
         db.session.commit()
-        print(f"✅ hookers та themepark тепер слідять за blackjack")
-        print(f"✅ blackjack тепер слідить за hookers")
+        print(f"✅ hookers and themepark are now following blackjack")
+        print(f"✅ blackjack is now following hookers")
         
         # 5. Створити пости
-        print("📝 Створюємо пости...")
+        print("📝 Creating posts...")
         
         now = datetime.utcnow()
         
@@ -139,10 +139,10 @@ def seed_database():
         
         db.session.add_all([post1, post2, post3, post4, post5, post6, post7, post8, post9])
         db.session.commit()
-        print(f"✅ Створено 9 постів (3 на кожного користувача)")
+        print(f"✅ Created 9 post (3 per user)")
         
         # 6. Додати лайки
-        print("❤️ Додаємо лайки...")
+        print("❤️ Adding likes...")
         
         # hookers likes blackjack's posts
         like1 = PostLike(user_id=user2.id, post_id=post1.id)
@@ -165,11 +165,11 @@ def seed_database():
         
         db.session.add_all([like1, like2, like3, like4, like5, like6, like7, like8, like9])
         db.session.commit()
-        print(f"✅ Додано 9 лайків")
+        print(f"✅ Added 9 likes")
         
         # 7. Вивести статистику
         print("\n" + "="*50)
-        print("📊 СТАТИСТИКА ТЕСТОВИХ ДАНИХ")
+        print("📊 TEST DATA STATISTICS")
         print("="*50)
         
         all_users = User.query.all()
@@ -177,26 +177,29 @@ def seed_database():
         all_likes = PostLike.query.all()
         all_follows = Follow.query.all()
         
-        print(f"👥 Користувачів: {len(all_users)}")
-        print(f"📝 Постів: {len(all_posts)}")
-        print(f"❤️ Лайків: {len(all_likes)}")
-        print(f"🔗 Підписок: {len(all_follows)}")
+        print(f"👥 Users: {len(all_users)}")
+        print(f"📝 Posts: {len(all_posts)}")
+        print(f"❤️ Likes: {len(all_likes)}")
+        print(f"🔗 Follows: {len(all_follows)}")
+
         
-        print("\n👤 КОРИСТУВАЧІ:")
+        print("\n👤 USERS:")
         for user in all_users:
             followers_count = user.got_followed_back_list.count()
             following_count = user.following_to_list.count()
             posts_count = user.posts.count()
             print(f"  - {user.username} (email: {user.email})")
-            print(f"    Слідків: {following_count}, Послідовників: {followers_count}, Постів: {posts_count}")
+            print(f"    Following: {following_count}, Followers: {followers_count}, Posts: {posts_count}")
         
         print("\n" + "="*50)
-        print("✅ БАЗА ДАНИХ УСПІШНО ЗАПОВНЕНА!")
+        print("✅ DATABASE SUCCESSFULLY SEEDED!")
         print("="*50)
-        print("\nДля входу використай:")
+
+        print("\nTo log in, use:")
         print("  Username: blackjack, Password: password123")
         print("  Username: hookers,   Password: password123")
         print("  Username: themepark, Password: password123")
+
 
 if __name__ == '__main__':
     seed_database()
