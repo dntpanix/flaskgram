@@ -1,6 +1,8 @@
 # Flaskygram
 Python Flask Instagram emulator
-Current UI is 1:1 DOM copy of (c)Instagramm, but some styles doestn shows propertly - IDK why...
+
+Current UI is 1:1 DOM copy of (c)Instagram, but some styles doestn shows propertly - IDK why...
+
 <img width="1475" height="881" alt="Flaskygram current view" src="https://github.com/user-attachments/assets/d0bc7336-3661-4cd8-9e6a-64084c0c0c20" />
 
 
@@ -12,10 +14,10 @@ after downloading/cloning the repository code, follow below steps:
 ### Backend
 
 - create your virtual environment
-`python -m venv myenv` 
+`python -m venv venv` 
 
 - activate your virtual environment
-`myenv\scripts\activate`
+`venv\Scripts\activate`
 
 - install project dependencies
 `pip install -r requirements.txt`
