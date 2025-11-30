@@ -1,5 +1,8 @@
 # Flaskygram
-Python Flask Instagramm emulator
+Python Flask Instagram emulator
+Current UI is 1:1 DOM copy of (c)Instagramm, but some styles doestn shows propertly - IDK why...
+<img width="1475" height="881" alt="Flaskygram current view" src="https://github.com/user-attachments/assets/d0bc7336-3661-4cd8-9e6a-64084c0c0c20" />
+
 
 Backend based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
 
