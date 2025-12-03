@@ -45,3 +45,6 @@ def test():
 # @app.errorhandler(405)
 # def method_not_allowed(e):
 #     return abort(400, {"msg": 'custom error message to appear in body'})
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=5000, debug=True)
