@@ -6,7 +6,7 @@ Current UI is 1:1 DOM copy of (c)Instagram, but some styles doestn shows propert
 <img width="1475" height="881" alt="Flaskygram current view" src="https://github.com/user-attachments/assets/d0bc7336-3661-4cd8-9e6a-64084c0c0c20" />
 
 
-Backend based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
+Backend partly based on  https://github.com/YashMarmat/Instagram-clone-with-FLASK/
 
 ## Installation
 after downloading/cloning the repository code, follow below steps:
